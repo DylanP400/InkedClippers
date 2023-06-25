@@ -1,1 +1,1 @@
-web: gunicorn inkedclippers.wsgi 
+web: gunicorn inkedclippers.wsgi
