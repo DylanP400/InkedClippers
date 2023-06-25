@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['inked-clippers.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['8000-dylanp400-inkedclippers-9j1n0bth96l.ws-eu100.gitpod.io', 'inked-clippers.herokuapp.com', 'localhost']
 
 
 # Application definition
