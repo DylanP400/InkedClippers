@@ -1,0 +1,116 @@
+/* --------------------------------------------------------------------------- Nav bar */
+.nav-btns {
+    display: flex;
+    justify-content: center;
+}
+
+/* ------------------------------------------------------------------------------General */
+
+a {
+    text-decoration: none;
+}
+
+/*----------------------------------------------------------------------- Landing page img */
+.image-container {
+    height: 100dvh;
+
+    background: url(../images/haircut-1.jpg) no-repeat center fixed;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+}
+
+.darken-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* -------------------------------------------------------------------------- Callout */
+
+/* .call-out {
+    display: flex;
+    position: relative;
+} */
+
+/* .call-out .container-fluid {
+    position: relative;
+} */
+
+/* .call-out .darken-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+} */
+
+/* .call-out .row {
+    position: relative;
+    z-index: 2;
+} */
+
+
+body {
+    background-color: rgb(33, 33, 33);
+    height: 100dvh;
+}
+
+.reviews-btn {
+    display: flex;
+    justify-content: center;
+}
+
+#down-icon {
+    font-size: 60px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    z-index: 2;
+}
+
+/* ------------------------------------------------------------------------------meet them team */
+.card {
+    height: 100%;
+}
+
+
+
+/* ------------------------------------------------------------------------------ Testimonials */
+
+
+
+
+/* -------------------------------------------------------------------------------Barbershop page */
+
+/* .services-img {
+    height: 100dvh;
+
+    background: url(../images/barber-1.jpeg) no-repeat center fixed;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+} */
+
+
+.table-services {
+    color: white;
+    height: 100%;
+    width: 100%;
+}
