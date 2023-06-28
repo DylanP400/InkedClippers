@@ -17,8 +17,6 @@
 </div>
 
 <!-- Meet the Team -->
-
-<!--The Barbers-->
 <section>
     <div class="container-fluid">
         <div class="row bg-dark">
@@ -26,9 +24,11 @@
                 <h2 class="text-white text-center my-3" id="meet-the-team">Meet the Team</h2>
             </div>
             <div class="row justify-content-evenly">
-                <div class="col-lg-6 text-center col-12 ">
-                    <h3 class="text-white sm-text-center text-lg-start ms-5 my-4"> <i class="fa-solid fa-scissors"></i>
-                        The Barbers</h3>
+                <div class="col-lg-6 text-center col-12">
+                    <h3 class="text-white sm-text-center text-lg-start ms-5 my-4">
+                        <i class="fa-solid fa-scissors"></i>
+                        The Barbers
+                    </h3>
                     <hr class="text-white">
                 </div>
                 <div class="col-6 d-none d-lg-inline">
@@ -37,137 +37,23 @@
                 </div>
             </div>
         </div>
+
         <div class="row lg-justify-content-evenly g-3">
-            <div class="col-lg-2 col-6">
+            {% for member in members %}
+            <div class="col-md-2 col-sm-6">
                 <div class="card border-3">
-                    <div class="card-header text-center bg-dark text-white fw-bold">Robert O'Brien
-                    </div>
-                    <img src="{% static 'images/barber-1.jpeg' %}" class="card-img-top img-fluid" alt="...">
+                    <div class="card-header text-center bg-dark text-white fw-bold">{{ member.name }}</div>
+                    <img src="{{ member.image.url }}" class="card-img-top img-fluid" alt="...">
                     <div class="card-body bg-dark">
-                        <h4 class="text-white text-center fs-6"><u>The Owner</u></h4>
-                        <p class="card-text text-white fs-6 text-center">Introducing Rob, the proud
-                            owner of the
-                            barbershop.
-                            Stepping up when his father retired in 2000, Rob continues the family
-                            legacy. With
-                            experience and a deep-rooted passion for barbering, he's created a
-                            thriving hub for the
-                            community. Join Rob on this journey as he carries on the tradition of
-                            quality cuts and a
-                            welcoming atmosphere.</p>
+                        <h4 class="text-white text-center fs-6"><u>{{ member.role }}</u></h4>
+                        <p class="card-text text-white fs-6 text-center">{{ member.bio }}</p>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-6">
-                <div class="card border-3">
-                    <div class="card-header text-center bg-dark text-white fw-bold">Maria Lopez
-                    </div>
-                    <img src="{% static 'images/barber-2.jpeg' %}" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body bg-dark">
-                        <h4 class="text-white text-center fs-6"><u>The Cutting Edge</u></h4>
-                        <p class="card-text text-white fs-6 text-center">Introducing Maria "The
-                            Cutting Edge," a
-                            skilled barber
-                            with a passion for precision. Maria's expertise and attention to detail
-                            have earned her
-                            the moniker among her clientele. With every snip of her scissors, Maria
-                            transforms hair
-                            into works of art, creating stylish and impeccable cuts that push
-                            hairstyling
-                            boundaries.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-6">
-                <div class="card border-3">
-                    <div class="card-header text-center bg-dark text-white fw-bold">Lucas Drake
-                    </div>
-                    <img src="{% static 'images/barber-3.jpg' %}" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body bg-dark">
-                        <h4 class="text-white text-center fs-6"><u>The Gentlemen</u></h4>
-                        <p class="card-text text-white fs-6 text-center">Introducing Lucas, a barber
-                            embodying
-                            elegance and
-                            sophistication. With refined techniques and meticulous attention to
-                            detail, Lucas
-                            delivers impeccable grooming services. From classic haircuts to
-                            well-groomed beards and
-                            traditional hot towel shaves, he ensures clients feel like true
-                            gentlemen.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-6">
-                <div class="card border-3">
-                    <div class="card-header text-center bg-dark text-white fw-bold">Richard Cannon
-                    </div>
-                    <img src="{% static 'images/barber-4.jpg' %}" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body bg-dark">
-                        <h4 class="text-white text-center fs-6"><u>The Rising Star</u></h4>
-                        <p class="card-text text-white text-center fs-6">Introducing Richard "The
-                            Rising Star," a
-                            young and
-                            talented barber making waves in the industry. Eager to prove his skills,
-                            Richard brings
-                            a modern touch to traditional techniques. His dedication and commitment
-                            to customer
-                            satisfaction are evident in every cut. Witness the rise of "The Rising
-                            Star" as he sets
-                            a new standard in barbering.</p>
-                    </div>
-                </div>
-            </div>
-            <!--Tattoo Artists-->
-            <h3 class="text-white text-center my-3 d-lg-none">Tattooer &amp; Piercers</h3>
-            <div class="col-6 col-lg-2">
-                <div class="card border-3">
-                    <div class="card-header text-center bg-dark text-white fw-bold">Darren O'Brien
-                    </div>
-                    <img src="{% static 'images/tattoo-artist-1.jpg' %}" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body bg-dark">
-                        <h4 class="text-white text-center fs-6"><u>The Master of Ink</u></h4>
-                        <p class="card-text text-white text-center">Introducing Darren, the talented
-                            tattoo artist
-                            infusing
-                            international flair into the family business. With experience gained
-                            abroad, Darren
-                            brings vibrant energy and artistic influences to his work. His studio is
-                            a haven for
-                            unique and personalized ink, as he turns ideas into stunning works of
-                            art. Let Darren
-                            leave a lasting impression on your skin.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-lg-2">
-                <div class="card border-3">
-                    <div class="card-header text-center bg-dark text-white fw-bold">Jessica Clarke
-                    </div>
-                    <img src="{% static 'images/tattoo-artist-2.jpg' %}" class="card-img-top img-fluid" alt="...">
-                    <div class="card-body bg-dark">
-                        <h4 class="text-white text-center fs-6"><u>The Piercing Prodigy</u></h4>
-                        <p class="card-text text-white text-center">Introducing Jessica Clarke, a
-                            rising star in the
-                            world of
-                            piercing. With six years of dedicated experience, Jessica has honed her
-                            craft,
-                            delivering precise and artistic piercings. From simple elegance to bold
-                            uniqueness, her
-                            attention to detail and understanding of clients' desires make her a
-                            sought-after
-                            piercer. Step into Jessica's studio and let her transform your vision
-                            into a stunning
-                            and meaningful piercing.</p>
-                    </div>
-                </div>
-            </div>
+            {% endfor %}
         </div>
     </div>
 </section>
-<!--End-->
-
 <!--Testimonials-->
 
 <section>
