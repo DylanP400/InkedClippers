@@ -1,10 +1,14 @@
 from django.shortcuts import render
-from .models import TeamMembers
+from .models import TeamMembers, Testimonials
 
 
 def home(request):
     members = TeamMembers.objects.all()
-    context = {'members': members}
+    testimonials = Testimonials.objects.all()
+    context = {
+        'members': members,
+        'testimonials': testimonials,
+    }
     return render(request, 'core/home.html', context)
 
 

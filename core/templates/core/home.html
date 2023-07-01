@@ -23,19 +23,6 @@
             <div class="col-12">
                 <h2 class="text-white text-center my-3" id="meet-the-team">Meet the Team</h2>
             </div>
-            <div class="row justify-content-evenly">
-                <div class="col-lg-6 text-center col-12">
-                    <h3 class="text-white sm-text-center text-lg-start ms-5 my-4">
-                        <i class="fa-solid fa-scissors"></i>
-                        The Barbers
-                    </h3>
-                    <hr class="text-white">
-                </div>
-                <div class="col-6 d-none d-lg-inline">
-                    <h3 class="text-white text-end me-5 my-4">Tattooer &amp; Piercer</h3>
-                    <hr class="text-white">
-                </div>
-            </div>
         </div>
 
         <div class="row lg-justify-content-evenly g-3">
@@ -64,101 +51,22 @@
             <div class="col-12">
                 <div class="list-group me-5">
                     <ul>
+                        {% for testimonial in testimonials %}
                         <li class="list-group-item bg-dark text-white border-3">
                             <p>
-                                <i class="fa-sharp fa-solid fa-star fa-beat fa-2xs" style="color: #fff700;"></i>
-                                <i class="fa-sharp fa-solid fa-star fa-beat fa-2xs" style="color: #fff700;"></i>
-                                <i class="fa-sharp fa-solid fa-star fa-beat fa-2xs" style="color: #fff700;"></i>
-                                <i class="fa-sharp fa-solid fa-star fa-beat fa-2xs" style="color: #fff700;"></i>
-                                <i class="fa-sharp fa-solid fa-star-half fa-beat-fade fa-2xs"
+                                <i class="fa-sharp fa-solid fa-star fa-beat fa-2xs" style="color: #fff700;"></i> <i
+                                    class="fa-sharp fa-solid fa-star fa-beat fa-2xs" style="color: #fff700;"></i> <i
+                                    class="fa-sharp fa-solid fa-star fa-beat fa-2xs" style="color: #fff700;"></i> <i
+                                    class="fa-sharp fa-solid fa-star fa-beat fa-2xs" style="color: #fff700;"></i> <i
+                                    class="fa-sharp fa-solid fa-star-half fa-beat-fade fa-2xs"
                                     style="color: #fbff00;"></i>
                             </p>
-                            <p><i class="fa-solid fa-quote-left"></i> I've been going to this
-                                barbershop for years,
-                                and I can confidently say it's the best
-                                in
-                                town. The barbers are skilled, friendly, and always give me the
-                                perfect haircut. The
-                                atmosphere is welcoming, and the attention to detail is outstanding.
-                                I wouldn't
-                                trust
-                                anyone else with my hair. <i class="fa-solid fa-quote-right"></i>
+                            <p><i class="fa-solid fa-quote-left"></i> {{ testimonial.review }} <i
+                                    class="fa-solid fa-quote-right"></i>
                             </p>
-                            <small class="fw-light">Review by - John D</small>
+                            <small class="fw-light">Review by - {{ testimonial.author }}</small>
                         </li>
-                        <li class="list-group-item bg-dark text-white border-3">
-                            <p>
-                                <i class="fa-sharp fa-solid fa-star fa-beat fa-2xs"></i>
-                                <i class="fa-sharp fa-solid fa-star fa-beat fa-2xs"></i>
-                                <i class="fa-sharp fa-solid fa-star fa-beat fa-2xs"></i>
-                                <i class="fa-sharp fa-solid fa-star fa-beat fa-2xs"></i>
-                                <i class="fa-sharp fa-solid fa-star fa-beat fa-2xs"></i>
-                            </p>
-
-                            <p><i class="fa-solid fa-quote-left"></i> I have been bringing my whole
-                                family to this
-                                barbershop for years, and we are never
-                                disappointed. The staff is excellent with kids and adults alike.
-                                They are patient,
-                                skilled, and create a comfortable environment for everyone. We love
-                                the quality of
-                                service and the friendly atmosphere. This is definitely the go-to
-                                barbershop in
-                                town! <i class="fa-solid fa-quote-right"></i>
-                            </p>
-                            <small class="fw-light">Review by - Mark T</small>
-                        </li>
-                        <li class="list-group-item bg-dark text-white border-3">
-                            <p>
-                                <i class="fa-sharp fa-solid fa-star fa-beat fa-2xs"></i>
-                                <i class="fa-sharp fa-solid fa-star fa-beat fa-2xs"></i>
-                                <i class="fa-sharp fa-solid fa-star fa-beat fa-2xs"></i>
-                                <i class="fa-sharp fa-solid fa-star fa-beat fa-2xs"></i>
-                            </p>
-                            <p><i class="fa-solid fa-quote-left"></i> I highly recommend this
-                                barbershop to anyone
-                                looking for a top-notch grooming
-                                experience.
-                                The barbers are true professionals who stay up to date with the
-                                latest trends and
-                                techniques. They offer valuable suggestions and pay close attention
-                                to every detail.
-                                From the moment you step in, you can expect excellent customer
-                                service and leave
-                                with a
-                                fresh look you'll love.
-                                <i class="fa-solid fa-quote-right"></i>
-                            </p>
-                            <small class="fw-light">Review by - David M</small>
-                        </li>
-                        <li class="list-group-item bg-dark text-white border-3">
-                            <p>
-                                <i class="fa-sharp fa-solid fa-star fa-beat fa-2xs"></i>
-                                <i class="fa-sharp fa-solid fa-star fa-beat fa-2xs"></i>
-                                <i class="fa-sharp fa-solid fa-star fa-beat fa-2xs"></i>
-                                <i class="fa-sharp fa-solid fa-star fa-beat fa-2xs"></i>
-                                <i class="fa-sharp fa-solid fa-star fa-beat fa-2xs"></i>
-                            </p>
-                            <p><i class="fa-solid fa-quote-left"></i> Having tried various
-                                barbershops in Ennis, I
-                                can confidently say that this barbershop
-                                is
-                                the best in town. The moment you step through the door, you're
-                                greeted with a
-                                friendly
-                                atmosphere and a team of highly skilled barbers. They take the time
-                                to understand
-                                your
-                                preferences and deliver exceptional haircuts every time. The
-                                attention to detail and
-                                their commitment to customer satisfaction is truly unmatched. If
-                                you're looking for
-                                a
-                                barbershop that exceeds expectations, look no further. This is the
-                                place to go. <i class="fa-solid fa-quote-right"></i>
-                            </p>
-                            <small class="fw-light">Review by - Michael R</small>
-                        </li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>

@@ -14,3 +14,13 @@ class TeamMembers(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Testimonials(models.Model):
+    rating = models.TextField()
+    review = models.TextField()
+    author = models.CharField(max_length=100)
+    date_created = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.author
