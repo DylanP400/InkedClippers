@@ -2,20 +2,19 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<div class="container bg-white">
+<div class="container text-center bg-white p-3 my-5 border rounded">
     <form method="POST">
         {% csrf_token %}
         <fieldset class="form-group">
-            <legend class="border-bottom mb-4">Join Today</legend>
+            <legend class="mb-3">Sign up to Inked Clippers</legend>
             {{ form|crispy }}
         </fieldset>
         <div class="form-group">
-            <button class="btn btn-outline-info" type="submit">Sign Up</button>
+            <button class="btn btn-outline-info mb-3" type="submit">Sign Up</button>
+            <small class="text-muted pb-3 fw-bold d-block">Already have an account? <a class="ml-2" href="">Sign
+                    in</a>
+            </small>
         </div>
     </form>
-    <div class="border-top pt-3">
-        <small class="text-muted">Already have an account? <a class="ml-2" href="">Sign in</a>
-        </small>
-    </div>
 </div>
 {% endblock content %}
