@@ -2,16 +2,19 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<div class="container text-center bg-white p-3 my-5 border rounded">
+<div class="container bg-dark px-3 py-2 my-3d">
     <form method="POST">
+        <!--csrf token is added to give security to django forms-->
         {% csrf_token %}
         <fieldset class="form-group">
-            <legend class="mb-3">Sign up to Inked Clippers</legend>
+            <legend class="mb-3 text-white">Sign up to Inked Clippers</legend>
+            <!--Crispy forms-->
             {{ form|crispy }}
         </fieldset>
         <div class="form-group">
-            <button class="btn btn-outline-info mb-3" type="submit">Sign Up</button>
-            <small class="text-muted pb-3 fw-bold d-block">Already have an account? <a class="ml-2" href="">Sign
+            <button class="btn btn-outline-info my-3 text-white" type="submit">Sign Up</button>
+            <small class="text-white pb-3 fw-bold d-block">Already have an account? <a class=""
+                    href="{% url 'login-page' %}">Sign
                     in</a>
             </small>
         </div>

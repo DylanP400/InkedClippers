@@ -27,6 +27,7 @@
 
         <div class="row lg-justify-content-evenly g-3">
             {% for member in members %}
+            <!--For loop to display all the team members to the site-->
             <div class="col-md-4 col-sm-6">
                 <div class="card border-3">
                     <div class="card-header text-center bg-dark text-white fw-bold">{{ member.name }}</div>
@@ -52,6 +53,7 @@
                 <div class="list-group me-5">
                     <ul>
                         {% for testimonial in testimonials %}
+                        <!--For loop to display all the testimonials to the site-->
                         <li class="list-group-item bg-dark text-white border-3">
                             <p>
                                 <i class="fa-sharp fa-solid fa-star fa-beat fa-2xs" style="color: #fff700;"></i> <i

@@ -10,10 +10,6 @@ a {
     text-decoration: none;
 }
 
-* {
-    list-style: none;
-}
-
 /*----------------------------------------------------------------------- Landing page img */
 .image-container {
     height: 100dvh;
@@ -81,6 +77,23 @@ body {
 
 /* --------------------------------------------------------------------------------Register page */
 
+
 .asteriskField {
     display: none;
+}
+
+/* .form-control {
+    width: 50%;
+}
+*/
+.form-label {
+    color: white;
+}
+
+.form li {
+    color: white;
+}
+
+.form-text {
+    color: white;
 }
