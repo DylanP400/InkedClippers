@@ -12,74 +12,15 @@
             </tr>
         </thead>
         <tbody>
+            {% for service in services %}
             <tr>
-                <th scope="row" class="text-center fw-semibold table-group-divider">SKIN FADE</th>
-                <td class="fw-semibold table-group-divider">£20</td>
-                <td class="fw-semibold table-group-divider">£18</td>
+                <th scope="row" class="text-center fw-semibold table-group-divider">{{ service.name }}</th>
+                <td class="fw-semibold table-group-divider">{{ service.price }}</td>
+                <td class="fw-semibold table-group-divider">{{ service.discount_price }}</td>
             </tr>
-            <tr>
-                <th scope="row" class="text-center fw-semibold">MENS CUT</th>
-                <td class="fw-semibold">£18</td>
-                <td class="fw-semibold">£16</td>
-            </tr>
-            <tr>
-                <th scope="row" class="text-center fw-semibold">SENIOR CUT</th>
-                <td class="fw-semibold">£16</td>
-                <td class="fw-semibold">£14</td>
-            </tr>
-            <tr>
-                <th scope="row" class="text-center fw-semibold">STUDENT CUT</th>
-                <td class="fw-semibold">£16</td>
-                <td class="fw-semibold">£14</td>
-            </tr>
-            <tr>
-                <th scope="row" class="text-center fw-semibold">KIDS CUT</th>
-                <td class="fw-semibold">£14</td>
-                <td class="fw-semibold">£12</td>
-            </tr>
-            <tr>
-                <th scope="row" class="text-center fw-semibold">BUZZ CUT</th>
-                <td class="fw-semibold">£14</td>
-                <td class="fw-semibold">£12</td>
-            </tr>
-            <tr>
-                <th scope="row" class="text-center fw-semibold">BEARD TRIM</th>
-                <td class="fw-semibold">£10</td>
-                <td class="fw-semibold">£8</td>
-            </tr>
-            <tr>
-                <th scope="row" class="text-center fw-semibold">SKIN FADE &amp; BEARD TRIM</th>
-                <td class="fw-semibold">£25</td>
-                <td class="fw-semibold">£20</td>
-            </tr>
-            <tr>
-                <th scope="row" class="text-center fw-semibold">DRY SHAVE</th>
-                <td class="fw-semibold">£10</td>
-                <td class="fw-semibold">£8</td>
-            </tr>
-            <tr>
-                <th scope="row" class="text-center fw-semibold">HOT TOWEL HEAD SHAVE</th>
-                <td class="fw-semibold">£15</td>
-                <td class="fw-semibold">£12</td>
-            </tr>
-            <tr>
-                <th scope="row" class="text-center fw-semibold">HOT TOWEL SHAVE</th>
-                <td class="fw-semibold">£15</td>
-                <td class="fw-semibold">£12</td>
-            </tr>
-            <tr>
-                <th scope="row" class="text-center fw-semibold">HIGHLIGHTS</th>
-                <td class="fw-semibold">£40</td>
-                <td class="fw-semibold">£35</td>
-            </tr>
-            <tr>
-                <th scope="row" class="text-center fw-semibold">SHAMPOO &amp; CUT</th>
-                <td class="fw-semibold">£30</td>
-                <td class="fw-semibold">£25</td>
-            </tr>
+            {% endfor %}
         </tbody>
     </table>
 </section>
-
 
 {% endblock content %}

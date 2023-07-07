@@ -1,6 +1,4 @@
-
-
-BarbershopServices = [
+BarbershopPrices = [
     {
         'name': 'SKIN FADE',
         'price': 20.00,
@@ -67,3 +65,4 @@ BarbershopServices = [
         'discount_price': 25.00
     },
 ]
+
