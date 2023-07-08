@@ -30,12 +30,13 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['8000-dylanp400-inkedclippers-98oc91nvvqw.ws-eu101.gitpod.io', "inked-clipper.herokuapp.com", "inked-clippers-6a7245ad63c3.herokuapp.com"]
+ALLOWED_HOSTS = ['8000-dylanp400-inkedclippers-98oc91nvvqw.ws-eu101.gitpod.io', "inked-clippers-6a7245ad63c3.herokuapp.com"]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'cloudinary_storage',
     'core.apps.CoreConfig',
     'users.apps.UsersConfig',
     'django.contrib.admin',
@@ -46,8 +47,20 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'crispy_forms',
     'crispy_bootstrap5',
+    'cloudinary',
 
 ]
+
+cloud_name = os.environ.get('CLOUD_NAME')
+cloud_api_key = os.environ.get('API_KEY')
+cloud_api_secret = os.environ.get('API_SECRET')
+
+
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'CLOUD_NAME',
+    'API_KEY': 'API_KEY',
+    'API_SECRET': 'API_SECRET'
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
