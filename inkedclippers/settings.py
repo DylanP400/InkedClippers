@@ -51,16 +51,6 @@ INSTALLED_APPS = [
 
 ]
 
-cloud_name = os.environ.get('CLOUD_NAME')
-cloud_api_key = os.environ.get('API_KEY')
-cloud_api_secret = os.environ.get('API_SECRET')
-
-
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'CLOUD_NAME',
-    'API_KEY': 'API_KEY',
-    'API_SECRET': 'API_SECRET'
-}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
