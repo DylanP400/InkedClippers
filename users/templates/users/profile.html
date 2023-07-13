@@ -2,5 +2,40 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
-<h1 class="text-white">Hello {{ user.username }}</h1>
+<div class="container d-flex justify-content-center">
+    <div id="profile-container">
+        <div class="row">
+            <div class="col-6">
+                <img class="rounded-circle account-img" src="{{ user.profile.image.url }}" alt="">
+            </div>
+            <div class="col-6">
+                <p class="text-white account-heading">Username:<span class="text-secondary">
+                        {{ user.username }}</span>
+                </p>
+                <p class="text-white"> Email: <span class="text-secondary"> {{ user.email }}</span></p>
+                <p class="text-white">Phone:<span class="text-secondary"> {{ user.profile.phone }}</span></p>
+                <p class="text-white">Location:<span class="text-secondary"> {{ user.profile.location }}</span>
+                </p>
+                <p class="text-white">D.O.B:<span class="text-secondary"> {{ user.profile.age }}</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <form method="POST" enctype="multipart/form-data">
+                    <!--csrf token is added to give security to django forms-->
+                    {% csrf_token %}
+                    <fieldset class="form-group">
+                        <legend class="mb-3 text-white">Profile Info</legend>
+                        <!--Crispy forms-->
+                        {{ u_form|crispy }}
+                        {{ p_form|crispy }}
+                    </fieldset>
+                    <div class="form-group">
+                        <button class="btn btn-outline-info my-3 text-white" type="submit">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock content %}

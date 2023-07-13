@@ -97,3 +97,22 @@ body {
 .form-text {
     color: white;
 }
+
+/* ----------------------------------------------------------------------------------Profile page */
+
+#profile-container {
+    height: fit-content;
+    width: fit-content;
+    padding: 20px;
+    margin: 20px;
+    background-color: (0, 0, 0, 0.5);
+    border: 4px solid white;
+    border-radius: 25px;
+}
+
+.account-img {
+    height: 125px;
+    width: 125px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+}
