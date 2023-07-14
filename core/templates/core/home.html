@@ -45,54 +45,55 @@
 <!--Testimonials-->
 
 <section>
-    <h2 class="text-center text-white mt-3">Testimonials</h2>
-    <hr class="text-white">
-    <div class="container-fluid my-3">
-        <div class="row">
-            <div class="col-12">
-                <div class="list-group me-5">
-                    <ul>
-                        {% for testimonial in testimonials %}
-                        <!--For loop to display all the testimonials to the site-->
-                        <li class="list-group-item bg-dark text-white border-3">
-                            <p>
-                                <i class="fa-sharp fa-solid fa-star fa-beat fa-2xs" style="color: #fff700;"></i> <i
-                                    class="fa-sharp fa-solid fa-star fa-beat fa-2xs" style="color: #fff700;"></i> <i
-                                    class="fa-sharp fa-solid fa-star fa-beat fa-2xs" style="color: #fff700;"></i> <i
-                                    class="fa-sharp fa-solid fa-star fa-beat fa-2xs" style="color: #fff700;"></i> <i
-                                    class="fa-sharp fa-solid fa-star-half fa-beat-fade fa-2xs"
-                                    style="color: #fbff00;"></i>
-                            </p>
-                            <p><i class="fa-solid fa-quote-left"></i> {{ testimonial.review }} <i
-                                    class="fa-solid fa-quote-right"></i>
-                            </p>
-                            <small class="fw-light">Review by - {{ testimonial.author }}</small>
-                        </li>
-                        {% endfor %}
+    <h3 class="text-center text-white mt-3">Testimonials by our members</h2>
+        <hr class="text-white">
+        <div class="container-fluid my-3">
+            <div class="row">
+                <div class="col-12">
+                    <div class="list-group me-5">
+                        <ul>
+                            {% for testimonial in testimonials %}
+                            <!--For loop to display all the testimonials to the site-->
+                            <li class="list-group-item bg-dark text-white border-3">
+                                <p>
+                                    <i class="fa-sharp fa-solid fa-star fa-beat fa-2xs" style="color: #fff700;"></i> <i
+                                        class="fa-sharp fa-solid fa-star fa-beat fa-2xs" style="color: #fff700;"></i> <i
+                                        class="fa-sharp fa-solid fa-star fa-beat fa-2xs" style="color: #fff700;"></i> <i
+                                        class="fa-sharp fa-solid fa-star fa-beat fa-2xs" style="color: #fff700;"></i> <i
+                                        class="fa-sharp fa-solid fa-star-half fa-beat-fade fa-2xs"
+                                        style="color: #fbff00;"></i>
+                                </p>
+                                <p><i class="fa-solid fa-quote-left"></i> {{ testimonial.review }} <i
+                                        class="fa-solid fa-quote-right"></i>
+                                </p>
+                                <small class="fw-light">Review by - {{ testimonial.author }}</small>
+                            </li>
+                            {% endfor %}
 
-                        {% for user_testimonial in new_testimonial %}
-                        <li class="list-group-item bg-dark text-white border-3">
-                            <p>{{ user_testimonial.get_rating_display }}</p>
-                            <p class="fw-light"><span class="fw-bold">Service by -</span> {{ user_testimonial.member }}
-                            </p>
-                            <p class="fw-light"><span class="fw-bold">Inked Clippers -</span>
-                                {{ user_testimonial.service }}</p>
-                            <p><i class="fa-solid fa-quote-left"></i> {{ user_testimonial.review }} <i
-                                    class="fa-solid fa-quote-right"></i></p>
-                            <small class="fw-light">Review by - {{ user_testimonial.user.username }}</small>
-                        </li>
-                        {% endfor %}
-                    </ul>
+                            {% for user_testimonial in new_testimonial %}
+                            <li class="list-group-item bg-dark text-white border-3">
+                                <p>{{ user_testimonial.get_rating_display }}</p>
+                                <p class="fw-light"><span class="fw-bold">Service by -</span>
+                                    {{ user_testimonial.member }}
+                                </p>
+                                <p class="fw-light"><span class="fw-bold">Inked Clippers -</span>
+                                    {{ user_testimonial.service }}</p>
+                                <p><i class="fa-solid fa-quote-left"></i> {{ user_testimonial.review }} <i
+                                        class="fa-solid fa-quote-right"></i></p>
+                                <small class="fw-light">Review by - {{ user_testimonial.user.username }}</small>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="reviews-btn">
-        {% if user.is_authenticated %}
-        <a href="{% url 'testimonial-page' %}" class="btn btn-success mb-4">Add Testimonial</a>
-        {% endif %}
+        <div class="reviews-btn">
+            {% if user.is_authenticated %}
+            <a href="{% url 'testimonial-page' %}" class="btn btn-success mb-4">Add Testimonial</a>
+            {% endif %}
 
-    </div>
+        </div>
 </section>
 
 <!--Location-->
