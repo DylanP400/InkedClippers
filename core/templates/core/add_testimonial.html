@@ -1,0 +1,26 @@
+{% extends "core/base.html"%}
+{% load crispy_forms_tags %}
+{% block content %}
+
+
+<div class="container bg-dark px-3 py-2 my-3d rounded d-flex justify-content-center">
+    <div id="reviews-container">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <form method="POST">
+                    {% csrf_token %}
+                    <!--csrf token is added to give security to django forms-->
+                    <fieldset class="form-group">
+                        <legend class="mb-3 text-white">Please share your experience below</legend>
+                        <!--Crispy forms-->
+                        {{ form|crispy }}
+                    </fieldset>
+                    <div class="form-group">
+                        <button class="btn btn-outline-info my-3 text-white" type="submit">Review</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

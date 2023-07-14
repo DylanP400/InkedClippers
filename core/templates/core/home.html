@@ -31,7 +31,7 @@
             <div class="col-md-4 col-sm-6">
                 <div class="card border-3">
                     <div class="card-header text-center bg-dark text-white fw-bold">{{ member.name }}</div>
-                    <img src="{{ member.image.url }}" class="card-img-top img-fluid" alt="...">
+                    <img src="{{ member.image.url }}" class="" alt="...">
                     <div class="card-body bg-dark">
                         <h4 class="text-white text-center fs-6"><u>{{ member.role }}</u></h4>
                         <p class="card-text text-white fs-6 text-center">{{ member.bio }}</p>
@@ -69,13 +69,29 @@
                             <small class="fw-light">Review by - {{ testimonial.author }}</small>
                         </li>
                         {% endfor %}
+
+                        {% for user_testimonial in new_testimonial %}
+                        <li class="list-group-item bg-dark text-white border-3">
+                            <p>{{ user_testimonial.get_rating_display }}</p>
+                            <p class="fw-light"><span class="fw-bold">Service by -</span> {{ user_testimonial.member }}
+                            </p>
+                            <p class="fw-light"><span class="fw-bold">Inked Clippers -</span>
+                                {{ user_testimonial.service }}</p>
+                            <p><i class="fa-solid fa-quote-left"></i> {{ user_testimonial.review }} <i
+                                    class="fa-solid fa-quote-right"></i></p>
+                            <small class="fw-light">Review by - {{ user_testimonial.user.username }}</small>
+                        </li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
         </div>
     </div>
     <div class="reviews-btn">
-        <button type="button" class="btn btn-success mb-4">Read more</button>
+        {% if user.is_authenticated %}
+        <a href="{% url 'testimonial-page' %}" class="btn btn-success mb-4">Add Testimonial</a>
+        {% endif %}
+
     </div>
 </section>
 
