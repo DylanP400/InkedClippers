@@ -1,6 +1,5 @@
 from django.db import models
 from django.contrib.auth.models import User
-from cloudinary_storage.storage import RawMediaCloudinaryStorage
 from cloudinary.models import CloudinaryField
 from PIL import Image
 from urllib.request import urlopen
@@ -8,10 +7,10 @@ from urllib.request import urlopen
 
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    image = models.ImageField(default='placeholder')
+    image = CloudinaryField('image', default='https://res.cloudinary.com/dylanp400/image/upload/c_fit,h_296/v1689790501/BS-default.jpg')
     location = models.CharField(max_length=100, default='Ennis')
     age = models.DateField(default='2000-01-01')
-    phone = models.CharField(max_length=20, default='SOME STRING')
+    phone = models.CharField(max_length=20, default='None')
 
     def __str__(self):
         return f'{self.user.username} Profile'

@@ -16,17 +16,12 @@ class UserRegisterForm(UserCreationForm):
 
 
 class UserUpdateForm(forms.ModelForm):
-    email = forms.EmailField()
-    age = forms.IntegerField()
-    location = forms.CharField(max_length=100)
-    phone = forms.CharField(max_length=20)
-
     class Meta:
         model = User
-        fields = ['username', 'email', 'age', 'location', 'phone']
+        fields = ['username', 'email']
 
 
 class ProfileUpdateForm(forms.ModelForm):
     class Meta:
         model = Profile
-        fields = ['image']
+        fields = ['age', 'location', 'phone', 'image']
