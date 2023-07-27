@@ -52,24 +52,6 @@
             <div class="col-12">
                 <div class="list-group me-5">
                     <ul>
-                        {% for testimonial in testimonials %}
-                        <!--For loop to display all the testimonials to the site-->
-                        <li class="list-group-item bg-dark text-white border-3">
-                            <p>
-                                <i class="fa-sharp fa-solid fa-star fa-beat fa-2xs" style="color: #fff700;"></i> <i
-                                    class="fa-sharp fa-solid fa-star fa-beat fa-2xs" style="color: #fff700;"></i> <i
-                                    class="fa-sharp fa-solid fa-star fa-beat fa-2xs" style="color: #fff700;"></i> <i
-                                    class="fa-sharp fa-solid fa-star fa-beat fa-2xs" style="color: #fff700;"></i> <i
-                                    class="fa-sharp fa-solid fa-star-half fa-beat-fade fa-2xs"
-                                    style="color: #fbff00;"></i>
-                            </p>
-                            <p><i class="fa-solid fa-quote-left"></i> {{ testimonial.review }} <i
-                                    class="fa-solid fa-quote-right"></i>
-                            </p>
-                            <small class="fw-light">Review by - {{ testimonial.author }}</small>
-                        </li>
-                        {% endfor %}
-
                         {% for user_testimonial in new_testimonial %}
                         <li class="list-group-item bg-dark text-white border-3">
                             <p>{{ user_testimonial.get_rating_display }}</p>

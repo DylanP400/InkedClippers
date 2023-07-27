@@ -43,11 +43,13 @@ class UserTestimonial(models.Model):
 
     SELECT = 'select'
     BARBER = 'Barber'
-    TATTOO_ARTIST = 'tattoo_artist'
+    TATTOO_ARTIST = 'tattoo artist'
+    PIERCER = 'Piercer'
     SERVICE_CHOICES = [
         (SELECT, 'Select'),
         (BARBER, 'Barber'),
         (TATTOO_ARTIST, 'Tattoo Artist'),
+        (PIERCER, 'Piercer')
     ]
 
     service = models.CharField(choices=SERVICE_CHOICES, max_length=20)
