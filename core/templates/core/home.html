@@ -16,32 +16,6 @@
     </div>
 </div>
 
-<!-- Meet the Team -->
-<section>
-    <div class="container-fluid">
-        <div class="row bg-dark">
-            <div class="col-12">
-                <h2 class="text-white text-center my-3" id="meet-the-team">Meet the Team</h2>
-            </div>
-        </div>
-
-        <div class="row lg-justify-content-evenly g-3">
-            {% for member in members %}
-            <!--For loop to display all the team members to the site-->
-            <div class="col-md-4 col-sm-6">
-                <div class="card border-3">
-                    <div class="card-header text-center bg-dark text-white fw-bold">{{ member.name }}</div>
-                    <img src="{{ member.image.url }}" class="" alt="...">
-                    <div class="card-body bg-dark">
-                        <h4 class="text-white text-center fs-6"><u>{{ member.role }}</u></h4>
-                        <p class="card-text text-white fs-6 text-center">{{ member.bio }}</p>
-                    </div>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
 <!--Testimonials-->
 
 <section>

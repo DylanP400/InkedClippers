@@ -3,24 +3,53 @@
 
 {% block content %}
 <section class="container my-5">
-    <table class="table-borderless table-services text-center">
-        <thead>
-            <tr id="barber-service">
-                <th scope="col">HAIR &amp; SHAVE</th>
-                <th scope="col">PRICES</th>
-                <th scope="col">MEMBERSHIP DISCOUNTS</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for service in services %}
-            <tr>
-                <th scope="row" class="text-center fw-semibold table-group-divider">{{ service.name }}</th>
-                <td class="fw-semibold table-group-divider">{{ service.price }}</td>
-                <td class="fw-semibold table-group-divider">{{ service.discount_price }}</td>
-            </tr>
+    <div class="row">
+        <div class="col">
+            <table class="table-borderless table-services text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">HAIR &amp; SHAVE</th>
+                        <th scope="col">PRICES</th>
+                        <th scope="col">MEMBERSHIP DISCOUNTS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for service in services %}
+                    <tr>
+                        <th scope="row" class="text-center fw-semibold table-group-divider">{{ service.name }}</th>
+                        <td class="fw-semibold table-group-divider">{{ service.price }}</td>
+                        <td class="fw-semibold table-group-divider">{{ service.discount_price }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container-fluid">
+        <div class="row bg-dark">
+            <div class="col-12">
+                <h2 class="text-white text-center my-3" id="meet-the-team">Meet the Barbers</h2>
+            </div>
+        </div>
+        <div class="row lg-justify-content-evenly g-3">
+            {% for member in members %}
+            <!--For loop to display all the team members to the site-->
+            <div class="col-md-3">
+                <div class="card border-3">
+                    <div class="card-header text-center bg-dark text-white fw-bold">{{ member.name }}</div>
+                    <img src="{{ member.image.url }}" class="" alt="...">
+                    <div class="card-body bg-dark">
+                        <h4 class="text-white text-center fs-6"><u>{{ member.role }}</u></h4>
+                        <p class="card-text text-white fs-6 text-center">{{ member.bio }}</p>
+                    </div>
+                </div>
+            </div>
             {% endfor %}
-        </tbody>
-    </table>
+        </div>
+    </div>
 </section>
 
 {% endblock content %}
