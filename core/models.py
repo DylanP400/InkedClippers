@@ -79,3 +79,13 @@ class TattooServices(models.Model):
     name = models.CharField(max_length=100)
     price = models.DecimalField(max_digits=5, decimal_places=2)
     discount_price = models.DecimalField(max_digits=5, decimal_places=2)
+
+
+class TattooQuestions(models.Model):
+    question = models.CharField(max_length=200)
+    answer = models.TextField()
+
+
+class AftercareQuestions(models.Model):
+    question = models.CharField(max_length=200)
+    answer = models.TextField()

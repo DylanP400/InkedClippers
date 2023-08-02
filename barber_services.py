@@ -65,4 +65,3 @@ BarbershopPrices = [
         'discount_price': 25.00
     },
 ]
-
