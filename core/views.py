@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import TeamMembers, Testimonials, BarberServices, UserTestimonial, TattooMembers
+from .models import TeamMembers, Testimonials, BarberServices, UserTestimonial, TattooMembers, TattooServices
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .forms import TestimonialForm
@@ -33,8 +33,16 @@ def barbers(request):
 
 def tattoo(request):
     members = TattooMembers.objects.all()
+    ear_piercings = TattooServices.objects.filter(name__in=['Lobe', 'Helix', 'Tragus', 'Anti-Tragus', 'Conch', 'Rook', 'Daith', 'Forward Helix', 'Industrial'])
+    facial_piercings = TattooServices.objects.filter(name__in=['Eyebrow', 'Anti-Eyebrow', 'Nose', 'Septum', 'Bridge', 'Rhino', 'Cheek', 'Dahlia'])
+    oral_piercings = TattooServices.objects.filter(name__in=['Tongue', 'Web', 'Smiley', 'Labret', 'Vertical Labret', 'Ashley', 'Medusa', 'Monroe'])
+    body_piercings = TattooServices.objects.filter(name__in=['Navel', 'Nipple', 'Nape', 'Surface', 'Custom', 'Microdermal', 'Genital'])
     context = {
         'members': members,
+        'ear_piercings': ear_piercings,
+        'facial_piercings': facial_piercings,
+        'oral_piercings': oral_piercings,
+        'body_piercings': body_piercings,
     }
     return render(request, 'core/tattoo.html', context)
 
