@@ -50,21 +50,20 @@ body {
     z-index: 2;
 }
 
-/* ------------------------------------------------------------------------------meet them team */
-.card {
-    height: 100%;
-}
-
-
-
 /* -------------------------------------------------------------------------------Barbershop page */
-
 
 .table-services {
     color: white;
     height: 100%;
     width: 100%;
 }
+
+.card {
+    height: 100%;
+}
+
+/* -------------------------------------------------------------------------------Tattoo page */
+.tattoo-team-img {}
 
 /* --------------------------------------------------------------------------------Register page */
 
@@ -126,8 +125,7 @@ body {
     position: fixed;
     width: 50px;
     height: 50px;
-    background: rgb(33, 37, 31);
-    color: black;
+    background-color: rgb(33, 37, 31);
     bottom: 30px;
     right: 30px;
     color: white;

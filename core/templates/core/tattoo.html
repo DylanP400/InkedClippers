@@ -1,0 +1,53 @@
+{% extends "core/base.html"%}
+{% load static %}
+
+{% block content %}
+<!-- <h1 class="text-white">Hello</h1>
+<section class="container my-5">
+    <table class="table-borderless table-services text-center">
+        <thead>
+            <tr>
+                <th scope="col">HAIR &amp;SHAVE</th>
+                <th scope="col">PRICES</th>
+                <th scope="col">MEMBERSHIP DISCOUNTS</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for service in services %}
+            <tr>
+                <th scope="row" class="text-center fw-semibold table-group-divider"></th>
+                <td class="fw-semibold table-group-divider"></td>
+                <td class="fw-semibold table-group-divider"></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</section> -->
+
+<section>
+    <div class="container-fluid">
+        <div class="row bg-dark">
+            <div class="col-12">
+                <h2 class="text-white text-center my-3" id="meet-the-team">Tattoo Artist &amp Piercer</h2>
+            </div>
+        </div>
+
+        <div class="row lg-justify-content-evenly g-3">
+            {% for member in members %}
+            <!--For loop to display all the team members to the site-->
+            <div class="col-md-6">
+                <div class="card border-3 mx-md-5">
+                    <div class="card-header text-center bg-dark text-white fw-bold">{{ member.name }}</div>
+                    <img src="{{ member.image.url }}" class="tattoo-team-img" alt="...">
+                    <div class="card-body bg-dark">
+                        <h4 class="text-white text-center fs-6"><u>{{ member.role }}</u></h4>
+                        <p class="card-text text-white fs-6 text-center">{{ member.bio }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

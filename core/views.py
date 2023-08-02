@@ -1,5 +1,5 @@
 from django.shortcuts import render, redirect
-from .models import TeamMembers, Testimonials, BarberServices, UserTestimonial
+from .models import TeamMembers, Testimonials, BarberServices, UserTestimonial, TattooMembers
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .forms import TestimonialForm
@@ -23,10 +23,20 @@ def about(request):
 
 def barbers(request):
     services = BarberServices.objects.all()
+    members = TeamMembers.objects.all()
     context = {
-        'services': services
+        'services': services,
+        'members': members,
     }
     return render(request, 'core/barbers.html', context)
+
+
+def tattoo(request):
+    members = TattooMembers.objects.all()
+    context = {
+        'members': members,
+    }
+    return render(request, 'core/tattoo.html', context)
 
 
 @login_required

@@ -17,6 +17,16 @@ class TeamMembers(models.Model):
         return self.name
 
 
+class TattooMembers(models.Model):
+    name = models.CharField(max_length=100)
+    image = CloudinaryField('image', default='placeholder')
+    role = models.CharField(max_length=100)
+    bio = models.TextField()
+
+    def __str__(self):
+        return self.name
+
+
 class Testimonials(models.Model):
     rating = models.TextField()
     review = models.TextField()
@@ -60,6 +70,12 @@ class UserTestimonial(models.Model):
 
 
 class BarberServices(models.Model):
+    name = models.CharField(max_length=100)
+    price = models.DecimalField(max_digits=5, decimal_places=2)
+    discount_price = models.DecimalField(max_digits=5, decimal_places=2)
+
+
+class TattooServices(models.Model):
     name = models.CharField(max_length=100)
     price = models.DecimalField(max_digits=5, decimal_places=2)
     discount_price = models.DecimalField(max_digits=5, decimal_places=2)
