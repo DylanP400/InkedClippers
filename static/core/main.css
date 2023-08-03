@@ -8,6 +8,24 @@
 
 a {
     text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: blue;
+}
+
+.blk-bkround {
+    background-color: rgb(31, 37, 41);
+}
+
+body {
+    background-color: rgb(33, 33, 33);
+    height: 100dvh;
+}
+
+.txt-none {
+    text-decoration: none;
 }
 
 /*----------------------------------------------------------------------- Landing page img */
@@ -31,12 +49,6 @@ a {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-}
-
-
-body {
-    background-color: rgb(33, 33, 33);
-    height: 100dvh;
 }
 
 
@@ -145,8 +157,4 @@ body {
     background-color: green;
     color: black;
     font-size: 35px;
-}
-
-.blk-bkround {
-    background-color: rgb(31, 37, 41);
 }
