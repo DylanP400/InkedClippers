@@ -53,10 +53,49 @@ def tattoo(request):
     members = TattooMembers.objects.all()
     questions = TattooQuestions.objects.all()
     aftercare_questions = AftercareQuestions.objects.all()
-    ear_piercings = TattooServices.objects.filter(name__in=['Lobe', 'Helix', 'Tragus', 'Anti-Tragus', 'Conch', 'Rook', 'Daith', 'Forward Helix', 'Industrial'])
-    facial_piercings = TattooServices.objects.filter(name__in=['Eyebrow', 'Anti-Eyebrow', 'Nose', 'Septum', 'Bridge', 'Rhino', 'Cheek', 'Dahlia'])
-    oral_piercings = TattooServices.objects.filter(name__in=['Tongue', 'Web', 'Smiley', 'Labret', 'Vertical Labret', 'Ashley', 'Medusa', 'Monroe'])
-    body_piercings = TattooServices.objects.filter(name__in=['Navel', 'Nipple', 'Nape', 'Surface', 'Custom', 'Microdermal', 'Genital'])
+    ear_piercings = TattooServices.objects.filter(name__in=[
+        'Lobe',
+        'Helix',
+        'Tragus',
+        'Anti-Tragus',
+        'Conch',
+        'Rook',
+        'Daith',
+        'Forward Helix',
+        'Industrial']
+        )
+
+    facial_piercings = TattooServices.objects.filter(name__in=[
+        'Eyebrow',
+        'Anti-Eyebrow',
+        'Nose',
+        'Septum',
+        'Bridge',
+        'Rhino',
+        'Cheek',
+        'Dahlia']
+        )
+
+    oral_piercings = TattooServices.objects.filter(name__in=[
+        'Tongue',
+        'Web',
+        'Smiley',
+        'Labret',
+        'Vertical Labret',
+        'Ashley',
+        'Medusa',
+        'Monroe']
+        )
+
+    body_piercings = TattooServices.objects.filter(name__in=[
+        'Navel',
+        'Nipple',
+        'Nape',
+        'Surface',
+        'Custom',
+        'Microdermal',
+        'Genital']
+        )
     context = {
         'members': members,
         'ear_piercings': ear_piercings,
