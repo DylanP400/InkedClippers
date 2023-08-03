@@ -10,7 +10,8 @@
                 <h1 class="text-white fs-1">Precision Cuts, Timeless Tattoos</h1>
                 <h2 class="text-white fs-2">Unleash Your Style at Inked
                     Clippers!</h2>
-                <a href="#Testimonials"><i class="fa-solid fa-chevron-down fa-beat" id="down-icon"></i></a>
+                <a href="#Testimonials" aria-label="Jump to Testimonials"><i class="fa-solid fa-chevron-down fa-beat"
+                        id="down-icon"></i></a>
             </div>
         </div>
     </div>
@@ -21,14 +22,14 @@
 <section>
     <h3 class="text-center text-white mt-3" id="Testimonials">Testimonials</h3>
     <hr class="text-white">
-    <div class="container-fluid my-3">
+    <div class="container-fluid my-3 p-md-5">
         <div class="row">
             <div class="col-12">
                 <div class="list-group me-5">
                     <ul>
                         {% for user_testimonial in new_testimonial %}
                         <li class="list-group-item bg-dark text-white border-3">
-                            <p>{{ user_testimonial.get_rating_display }}</p>
+                            <p class="my-3">{{ user_testimonial.get_rating_display }}</p>
                             <p class="fw-light"><span class="fw-bold">Service by -</span>
                                 {{ user_testimonial.member }}
                             </p>
@@ -36,7 +37,7 @@
                                 {{ user_testimonial.service }}</p>
                             <p class="txt-none"><i class="fa-solid fa-quote-left"></i><a
                                     href="{% url 'testimonials-detail' user_testimonial.pk %}" class="txt-none">
-                                    {{ user_testimonial.review }}</a><i class="fa-solid fa-quote-right"></i></p>
+                                    {{ user_testimonial.review }} </a><i class="fa-solid fa-quote-right"></i></p>
                             <small class="fw-light">Review by - {{ user_testimonial.user.username }}</small>
                         </li>
                         {% endfor %}
