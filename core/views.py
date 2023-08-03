@@ -1,20 +1,38 @@
 from django.shortcuts import render, redirect
-from .models import TeamMembers, Testimonials, BarberServices, UserTestimonial, TattooMembers, TattooServices, TattooQuestions, AftercareQuestions
+from .models import (
+    TeamMembers,
+    Testimonials,
+    BarberServices,
+    UserTestimonial,
+    TattooMembers,
+    TattooServices,
+    TattooQuestions,
+    AftercareQuestions
+)
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .forms import TestimonialForm
+from django.views.generic import ListView, DetailView
 
 
-def home(request):
-    members = TeamMembers.objects.all()
-    testimonials = Testimonials.objects.all()
-    new_testimonial = UserTestimonial.objects.all()
-    context = {
-        'members': members,
-        'testimonials': testimonials,
-        'new_testimonial': new_testimonial,
-    }
-    return render(request, 'core/home.html', context)
+# def home(request):
+#     members = TeamMembers.objects.all()
+#     new_testimonial = UserTestimonial.objects.all()
+#     context = {
+#         'members': members,
+#         'new_testimonial': new_testimonial,
+#     }
+#     return render(request, 'core/home.html', context)
+
+
+class UserTestimonialsListView(ListView):
+    model = UserTestimonial
+    template_name = 'core/home.html'
+    context_object_name = 'new_testimonial'
+
+
+class UserTestimonialsDetailView(DetailView):
+    model = UserTestimonial
 
 
 def about(request):
@@ -67,3 +85,4 @@ def add_testimonial(request):
         'form': form
     }
     return render(request, 'core/add_testimonial.html', context)
+
