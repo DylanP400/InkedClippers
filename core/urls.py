@@ -2,6 +2,8 @@ from django.urls import path
 from .views import (
     UserTestimonialsListView,
     UserTestimonialsDetailView,
+    testimonialUpdate,
+    testimonialDelete
 )
 from . import views
 
@@ -16,4 +18,14 @@ urlpatterns = [
     path('barbers/', views.barbers, name='barbers-page'),
     path('tattoo/', views.tattoo, name='tattoo-page'),
     path('add_testimonial/', views.add_testimonial, name='testimonial-page'),
+    path(
+        'edit_testimonial/<int:pk>',
+        views.testimonialUpdate.as_view(),
+        name='edit-testimonial-page'
+        ),
+    path(
+        'delete_testimonial/<int:pk>',
+        views.testimonialDelete.as_view(),
+        name='delete-testimonial-page'
+        ),
 ]

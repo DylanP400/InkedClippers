@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from .models import (
     TeamMembers,
     Testimonials,
@@ -10,23 +10,17 @@ from .models import (
     AftercareQuestions
 )
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import UserPassesTestMixin
 from django.contrib import messages
 from .forms import TestimonialForm
+from django.urls import reverse, reverse_lazy
 from django.views.generic import (
     ListView,
     DetailView,
     CreateView,
+    UpdateView,
+    DeleteView,
 )
-
-
-# def home(request):
-#     members = TeamMembers.objects.all()
-#     new_testimonial = UserTestimonial.objects.all()
-#     context = {
-#         'members': members,
-#         'new_testimonial': new_testimonial,
-#     }
-#     return render(request, 'core/home.html', context)
 
 
 class UserTestimonialsListView(ListView):
@@ -37,6 +31,39 @@ class UserTestimonialsListView(ListView):
 
 class UserTestimonialsDetailView(DetailView):
     model = UserTestimonial
+
+
+class testimonialUpdate(UserPassesTestMixin, UpdateView):
+    model = UserTestimonial
+    fields = ['review', 'rating', 'member', 'service']
+
+    def test_func(self):
+        testimonial = self.get_object()
+        return self.request.user == testimonial.user
+
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        messages.success(
+            self.request,
+            'You have successfully updated your review'
+            )
+        return response
+
+    def get_success_url(self):
+        return reverse('testimonials-detail', args=[self.object.pk])
+
+
+class testimonialDelete(UserPassesTestMixin, DeleteView):
+    model = UserTestimonial
+    success_url = reverse_lazy('home-page')
+
+    def test_func(self):
+        testimonial = self.get_object()
+        return self.request.user == testimonial.user
+
+    def delete(self, request, *args, **kwargs):
+        messages.success(request, 'You have successfully deleted your review')
+        return super().delete(request, *args, **kwargs)
 
 
 def about(request):
