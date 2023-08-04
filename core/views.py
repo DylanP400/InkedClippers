@@ -12,7 +12,11 @@ from .models import (
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from .forms import TestimonialForm
-from django.views.generic import ListView, DetailView
+from django.views.generic import (
+    ListView,
+    DetailView,
+    CreateView,
+)
 
 
 # def home(request):
@@ -124,4 +128,3 @@ def add_testimonial(request):
         'form': form
     }
     return render(request, 'core/add_testimonial.html', context)
-

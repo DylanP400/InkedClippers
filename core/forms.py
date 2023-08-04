@@ -10,4 +10,5 @@ class TestimonialForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields['service'].widget = forms.Select(choices=UserTestimonial.SERVICE_CHOICES)
+        self.fields['service'].widget = forms.Select(
+            choices=UserTestimonial.SERVICE_CHOICES)
