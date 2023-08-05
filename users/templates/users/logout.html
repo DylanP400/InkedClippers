@@ -2,10 +2,12 @@
 
 
 {% block content %}
-<h2 class="text-white">You have been logged out</h2>
-<div class="border-top pt-3">
-    <small class="pb-3 mx-2 fw-bold d-block text-white">Login again? <a class="" href="{% url 'login-page' %}">Sign
-            in</a>
-    </small>
+<div class="container bg-dark px-3 py-2 my-3 text-center">
+    <h2 class="text-white">You have been logged out</h2>
+    <div class="border-top pt-3">
+        <small class="pb-3 mx-2 fw-bold d-block text-white">Login again? <a class="" href="{% url 'login-page' %}"> Sign
+                in</a>
+        </small>
+    </div>
 </div>
 {% endblock content %}
