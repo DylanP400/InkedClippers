@@ -4,6 +4,9 @@ from django.contrib.auth.models import User
 
 
 class TestimonialForm(forms.ModelForm):
+    """
+    Form for users to leave a testimonial
+    """
     class Meta:
         model = UserTestimonial
         fields = ['review', 'rating', 'member', 'service']

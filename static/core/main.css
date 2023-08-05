@@ -78,18 +78,11 @@ body {
     height: 100%;
 }
 
-
 /* --------------------------------------------------------------------------------Register page */
-
-
 .asteriskField {
     display: none;
 }
 
-/* .form-control {
-    width: 50%;
-}
-*/
 .form-label {
     color: white;
 }

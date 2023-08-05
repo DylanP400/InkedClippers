@@ -24,16 +24,46 @@ from django.views.generic import (
 
 
 class UserTestimonialsListView(ListView):
+    """
+    List view to display a list of UserTestimonials.
+    """
     model = UserTestimonial
     template_name = 'core/home.html'
     context_object_name = 'new_testimonial'
 
 
 class UserTestimonialsDetailView(DetailView):
+    """
+    Detail view to display a single UserTestimonial.
+    """
     model = UserTestimonial
 
 
+@login_required
+def add_testimonial(request):
+    """
+    View for adding/creating a Testimonial.
+    """
+    if request.method == 'POST':
+        form = TestimonialForm(request.POST)
+        if form.is_valid():
+            testimonial = form.save(commit=False)
+            testimonial.user = request.user
+            testimonial.save()
+            messages.success(request, 'Thank you for leaving a review')
+            return redirect('/')
+    else:
+        form = TestimonialForm()
+    context = {
+        'form': form
+    }
+    return render(request, 'core/add_testimonial.html', context)
+
+
 class testimonialUpdate(UserPassesTestMixin, UpdateView):
+    """
+    View for updating a Testimonial.
+    """
     model = UserTestimonial
     fields = ['review', 'rating', 'member', 'service']
 
@@ -54,6 +84,9 @@ class testimonialUpdate(UserPassesTestMixin, UpdateView):
 
 
 class testimonialDelete(UserPassesTestMixin, DeleteView):
+    """
+    View for deleting a Testimonial.
+    """
     model = UserTestimonial
     success_url = reverse_lazy('home-page')
 
@@ -67,10 +100,16 @@ class testimonialDelete(UserPassesTestMixin, DeleteView):
 
 
 def about(request):
+    """
+    View for the about page
+    """
     return render(request, 'core/about.html')
 
 
 def barbers(request):
+    """
+    View for barbers page which has services and barbershop employees
+    """
     services = BarberServices.objects.all()
     members = BarberMembers.objects.all()
     context = {
@@ -81,6 +120,10 @@ def barbers(request):
 
 
 def tattoo(request):
+    """
+    View for tattoo page which has services, tattoo studio employees
+    and a FAQ's for questions about getting a tattoo and aftercare
+    """
     members = TattooMembers.objects.all()
     questions = TattooQuestions.objects.all()
     aftercare_questions = AftercareQuestions.objects.all()
@@ -137,21 +180,3 @@ def tattoo(request):
         'aftercare_questions': aftercare_questions,
     }
     return render(request, 'core/tattoo.html', context)
-
-
-@login_required
-def add_testimonial(request):
-    if request.method == 'POST':
-        form = TestimonialForm(request.POST)
-        if form.is_valid():
-            testimonial = form.save(commit=False)
-            testimonial.user = request.user
-            testimonial.save()
-            messages.success(request, 'Thank you for leaving a review')
-            return redirect('/')
-    else:
-        form = TestimonialForm()
-    context = {
-        'form': form
-    }
-    return render(request, 'core/add_testimonial.html', context)

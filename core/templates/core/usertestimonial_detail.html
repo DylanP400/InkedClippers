@@ -3,6 +3,8 @@
 
 
 {% block content %}
+<!-- This section is for viewing just one testimonial
+    -->
 <section>
     <h3 class="text-center text-white mt-3">Testimonials</h3>
     <hr class="text-white">
@@ -28,6 +30,8 @@
         </div>
     </div>
     <div class="reviews-btn">
+        <!-- If statement to only show to edit/delete buttons if its the users own testimonial
+        -->
         {% if user.is_authenticated and user == object.user %}
         <a href="{% url 'edit-testimonial-page' object.pk %}" class="btn btn-success mb-4">Edit
             Testimonial</a>

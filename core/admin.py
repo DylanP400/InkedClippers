@@ -9,7 +9,7 @@ from .models import (
     AftercareQuestions,
 )
 
-# Register your models here.
+# Registered my models here to display them on the admin site
 admin.site.register(TeamMembers)
 
 admin.site.register(UserTestimonial)
