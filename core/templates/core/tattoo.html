@@ -171,7 +171,8 @@
                             <span class="fw-semibold">{{ questions.question }}</span>
                         </button>
                     </h2>
-                    <div id="collapseAftercare{{ questions.id }}" class="accordion-collapse collapse"
+                    <!--I am getting a error for #collapseAftercare{{ questions.id }} but its the only way I have got the FAQ's to open and close without bugs-->
+                    <div id="#collapseAftercare{{ questions.id }}" class="accordion-collapse collapse"
                         data-bs-parent=".accordion">
                         <div class="accordion-body">
                             <span class="text-dark">{{ questions.answer|linebreaksbr }}</span>

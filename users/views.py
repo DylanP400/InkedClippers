@@ -3,8 +3,16 @@ from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from .forms import UserRegisterForm, UserUpdateForm, ProfileUpdateForm
 
+"""For making the profile I relied on Corey schafer's Django series
+(https://www.youtube.com/watch?v=FdVuKt_iuSI&list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p&index=8).
+I had already watched the video but I came back when I was stuck
+to see how he went about it and I mixed some of hes code with mine"""
+
 
 def register(request):
+    """
+    View for registering a account
+    """
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
         if form.is_valid():
@@ -21,6 +29,9 @@ def register(request):
 
 @login_required
 def profile(request):
+    """
+    View for the profile page
+    """
     if request.method == 'POST':
         u_form = UserUpdateForm(request.POST, instance=request.user)
         p_form = ProfileUpdateForm(
