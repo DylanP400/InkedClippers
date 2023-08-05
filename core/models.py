@@ -6,6 +6,17 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 
+## I changed Team members model name to Barbermembers and created a new TeamMembers model but the name never changed in the admin panel and its a bit confusing.
+
+class BarberMembers(models.Model):
+    name = models.CharField(max_length=100)
+    image = CloudinaryField('image', default='placeholder')
+    role = models.CharField(max_length=100)
+    bio = models.TextField()
+
+    def __str__(self):
+        return self.name
+
 
 class TeamMembers(models.Model):
     name = models.CharField(max_length=100)
@@ -27,16 +38,6 @@ class TattooMembers(models.Model):
         return self.name
 
 
-class Testimonials(models.Model):
-    rating = models.TextField()
-    review = models.TextField()
-    author = models.CharField(max_length=100)
-    date_created = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return self.author
-
-
 class UserTestimonial(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     review = models.TextField()
@@ -51,12 +52,10 @@ class UserTestimonial(models.Model):
         (5, '⭐⭐⭐⭐⭐'),
     )
 
-    SELECT = 'select'
     BARBER = 'Barber'
     TATTOO_ARTIST = 'tattoo artist'
     PIERCER = 'Piercer'
     SERVICE_CHOICES = [
-        (SELECT, 'Select'),
         (BARBER, 'Barber'),
         (TATTOO_ARTIST, 'Tattoo Artist'),
         (PIERCER, 'Piercer')

@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from .models import (
+    BarberMembers,
     TeamMembers,
-    Testimonials,
     BarberServices,
     UserTestimonial,
     TattooMembers,
@@ -72,7 +72,7 @@ def about(request):
 
 def barbers(request):
     services = BarberServices.objects.all()
-    members = TeamMembers.objects.all()
+    members = BarberMembers.objects.all()
     context = {
         'services': services,
         'members': members,

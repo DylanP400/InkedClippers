@@ -1,9 +1,9 @@
 from django.contrib import admin
 from .models import (
     TeamMembers,
-    Testimonials,
     UserTestimonial,
     BarberServices,
+    BarberMembers,
     TattooMembers,
     TattooQuestions,
     AftercareQuestions,
@@ -12,11 +12,11 @@ from .models import (
 # Register your models here.
 admin.site.register(TeamMembers)
 
-admin.site.register(Testimonials)
-
 admin.site.register(UserTestimonial)
 
 admin.site.register(BarberServices)
+
+admin.site.register(BarberMembers)
 
 admin.site.register(TattooMembers)
 
