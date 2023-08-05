@@ -73,10 +73,12 @@
                     <li class="nav-item">
                         <a class="nav-link d-none d-md-inline text-white" href="{% url 'logout-page' %}">Logout</a>
                     </li>
-                    <button type="button" class="d-md-none bg-black text-white"><a
-                            href="{% url 'profile-page' %}">profile</a></button>
-                    <button type="button" class="d-md-none bg-black text-white"><a
-                            href="{% url 'logout-page' %}">Logout</a></button>
+                    <li class="nav-item nav-btns">
+                        <button type="button" class="d-md-none bg-black text-white"><a
+                                href="{% url 'profile-page' %}">Profile</a></button>
+                        <button type="button" class="d-md-none bg-black text-white"><a
+                                href="{% url 'logout-page' %}">Logout</a></button>
+                    </li>
                     {% else %}
                     <li class="nav-item">
                         <a class="nav-link d-none d-md-inline text-white justify-content-end"
@@ -86,7 +88,7 @@
                         <a class="nav-link d-none d-md-inline text-white" href="{% url 'login-page' %}">Login</a>
                     </li>
                     <div class="nav-btns">
-                        <button type="button" class="d-md-none bg-black text-white justify-content-center"><a
+                        <button type="button" class="d-md-none bg-black text-whiter"><a
                                 href="{% url 'register-page' %}">Register</a></button>
                         <button type="button" class="d-md-none bg-black text-white"><a
                                 href="{% url 'login-page' %}">Login</a></button>
