@@ -2,13 +2,14 @@
 
 Welcome to Inked Clippers!
 
-Inked Clippers is a platform that brings together barbers, tattoo artists, and piercers to showcase their services and connect with potential clients. Whether you're looking for a stylish haircut, a stunning tattoo, or a unique body piercing, Inked Clippers has got you covered.
+Inked Clippers is your one-stop destination for all things barbershop and tattoo studio. Our platform brings together skilled barbers, talented tattoo artists, and expert piercers to showcase their services and connect with potential clients. Whether you're looking for a fresh haircut, a unique tattoo, or a stylish body piercing, Inked Clippers has got you covered.
+
+[View live version](https://inked-clippers-6a7245ad63c3.herokuapp.com/)
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/DylanP400/InkedClippers)
 ![GitHub contributors](https://img.shields.io/github/contributors/DylanP400/InkedClippers)
 ![GitHub language count](https://img.shields.io/github/languages/count/DylanP400/InkedClippers)
 ![GitHub top language](https://img.shields.io/github/languages/top/DylanP400/InkedClippers)
-![GitHub Commit activity](https://img.shields.io/github/commit-activity/m/DylanP400/InkedClippers)
 ![Code size](https://img.shields.io/github/languages/code-size/DylanP400/InkedClippers)
 ![Github files](https://img.shields.io/github/directory-file-count/DylanP400/InkedClippers)
 ![Github stars](https://img.shields.io/github/stars/DylanP400/InkedClippers)
@@ -16,9 +17,79 @@ Inked Clippers is a platform that brings together barbers, tattoo artists, and p
 
 ## Contents
 
-* [Features](#Features)
+* [User Experience](#user-experience)
+
+  * [Initial Discussion](#initial-discussion)
+  
+  * [User Stories](#user-stories)
+
+* [Features](#features)
+
+* [Technologies Used](#technologies-usedS)
 
 
+
+# User Experience
+
+## Initial Discussion
+Inked Clippers Barbershop & Tattoo Studio is the culmination of my passion for both barbershop aesthetics and tattoo artistry. Originally conceived as a barbershop, I quickly realized that I could expand the concept to include a tattoo parlor, making the project even more exciting and unique.
+
+As a Django beginner, I embarked on this project with enthusiasm and determination. At first, I faced challenges connecting the various components, but through persistent trial and error, I gained a deeper understanding of the Django framework. Witnessing my vision gradually take shape was incredibly rewarding.
+
+The primary goal for Inked Clippers was to create a captivating home page that features a stunning landing page image, a section dedicated to customer testimonials, and a clear representation of our studio's location. Additionally, I aimed to provide detailed and separate pages for both the barbershop and tattoo services, showcasing the full range of services and introducing the talented employees behind each craft.
+
+Throughout the development process, I leveraged the power of Django, Bootstrap 5, and other essential technologies to ensure a seamless user experience. Combining frontend aesthetics with backend functionality, I strived to create an elegant and user-friendly platform that truly embodies the essence of our studio.
+
+As a testament to my growth as a developer, Inked Clippers serves as my inaugural Django project, and it holds a special place in my heart. With this project, I not only honed my technical skills but also gained invaluable insights into the world of barbershops and tattoo studios. I'm proud to present Inked Clippers Barbershop & Tattoo Studio as a fusion of artistry, creativity, and technical prowess.
+
+## Key information for this site
+
+* **Navbar**: Easily navigate through the website and access different sections.
+
+* **Footer**: Find contact details, address, and opening times for the shop.
+
+* **Home Page**: Welcome with a captivating landing image, customer testimonials, and the shop's location.
+
+* **About Page**: Introduction and a brief history of the barbershop and tattoo studio.
+
+* **Barbers Page**: Explore a variety of barber services and meet the talented team of barbers.
+
+* **Tattoo Page**: Explore piercing services, and get answers to common questions about getting a tattoo and aftercare from skilled artists and piercers on the Tattoo Page and FAQs section.
+
+## User Stories
+* As a **developer**, I want to **install Django on my local machine**, so that I can **start building web applications using the Django framework**
+
+* As a **developer**, I want to **set up ElephantSQL in my workspace**, so that I can **use it as a cloud-based PostgreSQL database for my project**.
+
+* As a **visitor**, I want to **read reviews and testimonials from previous customers**, so that **I can see the quality of the services offered**.
+
+* As a **visitor**, I want to **learn more about the team behind the barbershop or tattoo studio**, so that **I can feel a connection and establish trust**.
+
+* As a **visitor**, I want to **see a visually appealing header on the landing page**, so that **I can quickly understand the purpose and branding of the website**.
+
+* As a **customer**, I want to **find the contact details of Inked Clippers, such as the address, phone number, and email**, so that **I can reach out to them for inquiries or appointments**.
+
+* As a **customer**, I want to **easily find the location or address of the barbershop or tattoo studio**, so that **I can plan my visit or contact them if needed**.
+
+* As a **visitor**, I want to **be greeted by an engaging hero image on the landing page**, so that **I can get a glimpse of the atmosphere and style of the barbershop or tattoo studio**.
+
+* As a **customer**, I want to **view the list of services offered by the barbershop, along with their corresponding prices**, so that **I can choose the desired service within my budget**.
+
+* As a **developer** I want to **perform an initial deployment of my Django project to Heroku**, so that **I can quickly test and verify its functionality in a live environment**.
+
+* As a **customer**, I want to **register for the website** so that **I can access the features and functionalities**.
+
+* As a **customer** I want to be **able to log in and log out of the website**, so that **I can have an account to save my information so I dont have to enter it every time**.
+
+* As a **user**, I want to be **able to leave reviews for Inked Clippers services I have received** so that **I can share my experience and provide feedback to the barbershop and other potential customers**.
+
+* As a **user**, I want to be **able to update my personal information on my profile page** so that **I can keep my details accurate and up to date**.
+
+* As a **customer**, I want to **view the list of tattoo services offered by the studio, along with their corresponding prices**, so that **I can choose the desired service within my budget**.
+
+* As a **customer**, I want to **browse a gallery of the barbershop's previous haircuts and styles**, so that **I can assess their expertise and find inspiration for my own haircut**.
+
+* As a **customer**, I want to **browse a gallery of the tattoo studio's previous artworks**, so that **I can assess their style and find inspiration for my own tattoo design**.
 
 # Features
 
@@ -222,7 +293,7 @@ Inked Clippers is a platform that brings together barbers, tattoo artists, and p
 
 * [HTML Validator](https://validator.w3.org/) - For HTML validation.
 
-* [Python validator]() - For Python validation.
+* [Python validator](https://pep8ci.herokuapp.com/) - For Python validation.
 
 * [W3 Jigsaw](https://jigsaw.w3.org/css-validator/) - For CSS validation.
 
