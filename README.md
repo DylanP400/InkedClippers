@@ -20,12 +20,15 @@ Inked Clippers is your one-stop destination for all things barbershop and tattoo
 * [User Experience](#user-experience)
 
   * [Initial Discussion](#initial-discussion)
-  
+
   * [User Stories](#user-stories)
 
 * [Features](#features)
 
 * [Technologies Used](#technologies-usedS)
+
+* [Deployment](#deployment)
+
 
 
 
@@ -57,6 +60,7 @@ As a testament to my growth as a developer, Inked Clippers serves as my inaugura
 * **Tattoo Page**: Explore piercing services, and get answers to common questions about getting a tattoo and aftercare from skilled artists and piercers on the Tattoo Page and FAQs section.
 
 ## User Stories
+
 * As a **developer**, I want to **install Django on my local machine**, so that I can **start building web applications using the Django framework**
 
 * As a **developer**, I want to **set up ElephantSQL in my workspace**, so that I can **use it as a cloud-based PostgreSQL database for my project**.
@@ -314,7 +318,35 @@ As a testament to my growth as a developer, Inked Clippers serves as my inaugura
 * [sqlparse](https://pypi.org/project/sqlparse/) - A Python library for parsing and formatting SQL queries.
 
 
+# Deployment
 
+## Heroku
+
+* Steps for deployment.
+* Fork or clone this repository.
+* Create a new Heroku app.
+* Link the Heroku app to the repository.
+* Click on **Deploy**.
+
+## Local Deployment
+
+### How to Fork
+
+To fork the repository:
+
+1. Log in to Github.
+2. Go to the repository for this project, [DylanP400/InkedClippers](https://github.com/DylanP400/terminal-dice-pp3)
+3. Click the Fork button in the top right corner.
+
+### How to clone
+
+To clone the repository:
+
+1. Log in to GitHub.
+2. Go to the repository for this project, [DylanP400/InkedClippers](https://github.com/DylanP400/InkedClippers)
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
 
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
