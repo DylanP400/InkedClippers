@@ -186,4 +186,64 @@ Inked Clippers is a platform that brings together barbers, tattoo artists, and p
 
     * ![usertestimonial_confirm_delete Mobile View]()
 
+
+
+# Technologies Used
+
+## languages used
+
+* HTML
+* CSS
+* Python
+* Markdown
+
+## Frameworks, Libraries & Programs Used
+
+* [Git](https://git-scm.com/) - For version Control.
+
+* [Github](https://github.com/) - Used to save and store the files for the website.
+
+* [Gitpod](https://www.gitpod.io/) - Was used to created my code.
+
+* [Google Dev Tools](https://developer.chrome.com/docs/devtools/) - To troubleshoot and test features, solve issues with responsiveness and styling.
+
+* [AM I Resposnsive?](https://amiresponsive.co.uk/) - Used to show the Website image on a range of devices.
+
+* [Shields](https://shields.io/) - For the shields at the top of the README.
+
+* [Favicon](https://www.favicon-generator.org/) - Used to make a Favicon for the website.
+
+* [Coolors](https://coolors.co/808080-ff0000-ffffff-f5f5f5-000000) - For my colour scheme.
+
+* [Lamba Testing](https://www.lambdatest.com/?fp_ref=ngan15&gclid=Cj0KCQjwocShBhCOARIsAFVYq0i7XM8lENlC8yIrumBcCkS42VLHZfT6Fjc5waFzBGuNk6OCc7kIBFUaAou3EALw_wcB) - Was used for testing resposiveness across various devices.
+
+* [Favicon Generator](https://www.favicon-generator.org/) - Was
+ used to make the favicon.
+
+* [HTML Validator](https://validator.w3.org/) - For HTML validation.
+
+* [Python validator]() - For Python validation.
+
+* [W3 Jigsaw](https://jigsaw.w3.org/css-validator/) - For CSS validation.
+
+* [Bootstrap5](https://getbootstrap.com/docs/5.3/getting-started/introduction/) - For the sites layout.
+
+* [Django3](https://docs.djangoproject.com/en/4.2/) - 
+
+* [Cloudinary](https://cloudinary.com/) - For hosting Inked Clippers images.
+
+* [WhiteNoise](https://whitenoise.readthedocs.io/en/latest/) - For hosting static files.
+
+* [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - Enhanced form rendering for Django.
+
+* [psycopg2](https://pypi.org/project/psycopg2/) - PostgreSQL adapter for Python.
+
+* [Gunicorn](https://gunicorn.org/) - A Python HTTP server for running web applications.
+
+* [sqlparse](https://pypi.org/project/sqlparse/) - A Python library for parsing and formatting SQL queries.
+
+
+
+
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
