@@ -28,7 +28,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['8000-dylanp400-inkedclippers-98oc91nvvqw.ws-eu102.gitpod.io', "inked-clippers-6a7245ad63c3.herokuapp.com"]
 
