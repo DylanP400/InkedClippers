@@ -1,5 +1,9 @@
 # Inked Clippers Barbershop & Tattoo Studio
 
+Welcome to Inked Clippers!
+
+Inked Clippers is a platform that brings together barbers, tattoo artists, and piercers to showcase their services and connect with potential clients. Whether you're looking for a stylish haircut, a stunning tattoo, or a unique body piercing, Inked Clippers has got you covered.
+
 ![GitHub last commit](https://img.shields.io/github/last-commit/DylanP400/InkedClippers)
 ![GitHub contributors](https://img.shields.io/github/contributors/DylanP400/InkedClippers)
 ![GitHub language count](https://img.shields.io/github/languages/count/DylanP400/InkedClippers)
