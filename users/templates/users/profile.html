@@ -1,40 +1,98 @@
 {% extends "core/base.html"%}
+{% load static %}
 {% load crispy_forms_tags %}
 
 {% block content %}
 <!--This section and page is for the user profile-->
 <section>
-    <div class="container d-flex justify-content-center">
-        <div id="profile-container">
-            <div class="row">
-                <div class="col-6">
-                    <img class="rounded-circle account-img" src="{{ user.profile.image.url }}" alt="User profile image">
-                </div>
-                <div class="col-6">
-                    <p class="text-white account-heading">Username:<span class="text-secondary">
-                            {{ user.username }}</span>
-                    </p>
-                    <p class="text-white"> Email: <span class="text-secondary"> {{ user.email }}</span></p>
-                    <p class="text-white">Phone:<span class="text-secondary"> {{ user.profile.phone }}</span></p>
-                    <p class="text-white">Location:<span class="text-secondary"> {{ user.profile.location }}</span>
-                    </p>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="container d-flex justify-content-center">
+                    <div id="profile-container">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <img class="rounded-circle account-img" src="{{ user.profile.image.url }}"
+                                    alt="User profile image">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <p class="text-white account-heading">Username:<span class="text-secondary">
+                                        {{ user.username }}</span>
+                                </p>
+                                <p class="text-white"> Email: <span class="text-secondary">{{ user.email }}</span></p>
+                                <p class="text-white">Phone:<span class="text-secondary">
+                                        {{ user.profile.phone }}</span>
+                                </p>
+                                <p class="text-white">Location:<span class="text-secondary">
+                                        {{ user.profile.location }}</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <form method="POST" enctype="multipart/form-data">
+                                    <!--csrf token is added to give security to django forms-->
+                                    {% csrf_token %}
+                                    <fieldset class="form-group">
+                                        <legend class="mb-3 text-white">Profile Info</legend>
+                                        <!--Crispy forms-->
+                                        {{ u_form|crispy }}
+                                        {{ p_form|crispy }}
+                                    </fieldset>
+                                    <div class="form-group">
+                                        <button class="btn btn-outline-info my-3 text-white"
+                                            type="submit">Update</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <form method="POST" enctype="multipart/form-data">
-                        <!--csrf token is added to give security to django forms-->
-                        {% csrf_token %}
-                        <fieldset class="form-group">
-                            <legend class="mb-3 text-white">Profile Info</legend>
-                            <!--Crispy forms-->
-                            {{ u_form|crispy }}
-                            {{ p_form|crispy }}
-                        </fieldset>
-                        <div class="form-group">
-                            <button class="btn btn-outline-info my-3 text-white" type="submit">Update</button>
+            <div class="col-12 col-md-6">
+                <div id="review-container">
+                    <h3 class="text-center text-white mt-3" id="Testimonials">My Testimonials</h3>
+                    <hr class="text-white">
+                    <div class="reviews-btn">
+                        <a href="{% url 'testimonial-page' %}" class="btn btn-success mb-4 mb-md-0">Leave A Review</a>
+                    </div>
+                    <div class="container-fluid mb-3 p-md-5">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="list-group">
+                                    <ul class="p-0 m-0">
+                                        {% for user_testimonial in user_testimonials %}
+                                        <li class="list-group-item bg-dark text-white border-3">
+                                            <p class="my-3">{{ user_testimonial.get_rating_display }}</p>
+                                            <p class="fw-light"><span class="fw-bold">Service by -</span>
+                                                {{ user_testimonial.member }}
+                                            </p>
+                                            <p class="fw-light"><span class="fw-bold">Inked Clippers -</span>
+                                                {{ user_testimonial.get_service_display }}
+                                            </p>
+                                            <p class="txt-none"><i class="fa-solid fa-quote-left"></i><a
+                                                    href="{% url 'testimonials-detail' user_testimonial.pk %}"
+                                                    class="txt-none">
+                                                    {{ user_testimonial.review }} </a><i
+                                                    class="fa-solid fa-quote-right"></i>
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <div class="reviews-btn mt-2">
+                                                <p><a href="{% url 'edit-testimonial-page' user_testimonial.pk %}"
+                                                        class="btn btn-sm btn-success text-center">Edit
+                                                        Testimonial</a></p>
+                                                <p><a href="{% url 'delete-testimonial-page' user_testimonial.pk %}"
+                                                        class="btn btn-sm btn-danger mb-4">Delete
+                                                        Testimonial</a></p>
+                                            </div>
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>

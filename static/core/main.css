@@ -107,6 +107,16 @@ body {
     border-radius: 25px;
 }
 
+#review-container {
+    height: fit-content;
+    width: fit-content;
+    padding: 20px;
+    margin: 20px;
+    background-color: (0, 0, 0, 0.5);
+    border: 4px solid white;
+    border-radius: 25px;
+}
+
 .account-img {
     height: 125px;
     width: 125px;

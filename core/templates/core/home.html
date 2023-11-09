@@ -35,9 +35,8 @@
                             </p>
                             <p class="fw-light"><span class="fw-bold">Inked Clippers -</span>
                                 {{ user_testimonial.service }}</p>
-                            <p class="txt-none"><i class="fa-solid fa-quote-left"></i><a
-                                    href="{% url 'testimonials-detail' user_testimonial.pk %}" class="txt-none">
-                                    {{ user_testimonial.review }} </a><i class="fa-solid fa-quote-right"></i></p>
+                            <p class="txt-none"><i class="fa-solid fa-quote-left"></i>
+                                {{ user_testimonial.review }} <i class="fa-solid fa-quote-right"></i></p>
                             <small class="fw-light">Review by - {{ user_testimonial.user.username }}</small>
                         </li>
                         {% endfor %}
