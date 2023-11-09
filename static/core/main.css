@@ -28,7 +28,37 @@ body {
     text-decoration: none;
 }
 
-/*----------------------------------------------------------------------- Landing page img */
+/*----------------------------------------------------------------------- Home page */
+
+.btn-black {
+    background-color: #212529;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-black:hover {
+    background-color: #212529;
+    border-color: white;
+    border: 2px solid black;
+    color: white;
+}
+
+.btn-white {
+    border: 2px solid black;
+    background-color: white;
+}
+
+.btn-white:hover {
+    border: 2px solid black;
+    background-color: #212529;
+    color: white;
+}
+
+.testimonial-btns {
+    gap: 4px;
+}
+
+
 .image-container {
     height: 100dvh;
 
@@ -136,7 +166,8 @@ body {
     border-radius: 25px;
 }
 
-.reviews-btn {
+.reviews-btn,
+.testimonial-btns {
     display: flex;
     justify-content: center;
 }
@@ -159,7 +190,7 @@ body {
 }
 
 .back-to-top:hover {
-    background-color: green;
+    background-color: blue;
     color: black;
     font-size: 35px;
 }

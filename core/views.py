@@ -30,6 +30,7 @@ class UserTestimonialsListView(ListView):
     model = UserTestimonial
     template_name = 'core/home.html'
     context_object_name = 'new_testimonial'
+    paginate_by = 3
 
 
 class UserTestimonialsDetailView(DetailView):
