@@ -28,6 +28,10 @@ body {
     text-decoration: none;
 }
 
+.blue {
+    color: blue;
+}
+
 /*----------------------------------------------------------------------- Home page */
 
 .btn-black {
@@ -108,6 +112,44 @@ body {
     height: 100%;
 }
 
+/* -----------------------------------------------------------------------------Tattoo page */
+
+/* .accordion-button {
+    background: #212529;
+    color: white !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #212529;
+    color: white;
+}
+
+.accordion-button:focus {
+    border-color: white !important;
+
+}
+
+.accordion-button:hover {
+    border-color: white !important;
+
+}
+
+.accordion-button::after {
+    color: white;
+    background-color: white;
+}
+
+.accordion-body {
+    background: #212529;
+    color: white;
+}
+
+.accordion-item {
+    background-color: #212529;
+    color: white;
+} */
+
+
 /* --------------------------------------------------------------------------------Register page */
 .asteriskField {
     display: none;
@@ -123,6 +165,24 @@ body {
 
 .form-text {
     color: white;
+}
+
+/* ------------------------------------------------------------------------------- Login */
+
+.white-container {
+    height: fit-content;
+    width: fit-content;
+    padding: 20px;
+    margin: 20px;
+    border: 4px solid white;
+    border-radius: 25px;
+}
+
+.logout-container {
+    padding: 20px;
+    margin: 40px;
+    border: 4px solid white;
+    border-radius: 25px;
 }
 
 /* ----------------------------------------------------------------------------------Profile page */

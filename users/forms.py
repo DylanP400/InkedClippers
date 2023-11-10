@@ -6,7 +6,7 @@ from .models import Profile
 
 class UserRegisterForm(UserCreationForm):
     """
-    This form is for people so make a account and sign up for Inked Clippers
+    This form is for people to make an account and sign up for Inked Clippers
     """
     email = forms.EmailField()
     location = forms.CharField(max_length=100)

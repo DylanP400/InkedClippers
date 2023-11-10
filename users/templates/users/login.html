@@ -4,23 +4,29 @@
 {% block content %}
 <!-- This section and page is for logging into your account-->
 <section>
-    <div class="container bg-dark px-3 py-2 my-3">
-        <form method="POST">
-            {% csrf_token %}
-            <!--csrf token is added to give security to django forms-->
-            <fieldset class="form-group">
-                <legend class="mb-3 text-white">Log In</legend>
-                <!--Crispy forms-->
-                {{ form|crispy }}
-            </fieldset>
-            <div class="form-group">
-                <button class="btn btn-outline-info my-3 text-white" type="submit">Login</button>
-                <small class="text-white pb-3 fw-bold d-block">Create An Account? <a class="ml-2"
-                        href="{% url 'register-page' %}">Sign
-                        up</a>
-                </small>
+    <div class="container px-5 py-2 my-3 border-3">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="white-container">
+                    <form method="POST">
+                        {% csrf_token %}
+                        <!--csrf token is added to give security to django forms-->
+                        <fieldset class="form-group">
+                            <legend class="mb-3 text-white">Log In</legend>
+                            <!--Crispy forms-->
+                            {{ form|crispy }}
+                        </fieldset>
+                        <div class="form-group">
+                            <button class="btn btn-outline-info my-3 text-white" type="submit">Login</button>
+                            <small class="text-white pb-3 fw-bold d-block">Create An Account? <a class="ml-2 blue"
+                                    href="{% url 'register-page' %}">Sign
+                                    up</a>
+                            </small>
+                        </div>
+                    </form>
+                </div>
             </div>
-        </form>
+        </div>
     </div>
 </section>
 {% endblock content %}
