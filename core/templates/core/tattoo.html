@@ -5,7 +5,7 @@
 <!-- This section is for the first two tables of the barbershop services  
     -->
 <section class="container-fluid mb-md-3">
-    <h1 class="text-white text-center mb-3">Prices for Piercing Services</h1>
+    <h1 class="text-white text-center mb-3 mt-2">Prices for Piercing Services</h1>
     <div class="row mx-md-5">
         <div class="col-md-6 py-2">
             <table class="table-borderless table-services text-center border-bottom">
@@ -142,13 +142,13 @@
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseQuestion{{ question.id }}" aria-expanded="false"
                             aria-controls="collapseQuestion{{ question.id }}">
-                            <span class="fw-semibold">{{ question.question }}</span>
+                            <span class="fw-semibold text-white">{{ question.question }}</span>
                         </button>
                     </h2>
                     <div id="collapseQuestion{{ question.id }}" class="accordion-collapse collapse"
                         data-bs-parent=".accordion">
                         <div class="accordion-body mb-3">
-                            <span class="text-dark">{{ question.answer|linebreaksbr }}</span>
+                            <span class="text-white">{{ question.answer|linebreaksbr }}</span>
                         </div>
                     </div>
                 </div>
@@ -168,14 +168,14 @@
                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                             data-bs-target="#collapseAftercare{{ questions.id }}" aria-expanded="false"
                             aria-controls="collapseAftercare{{ questions.id }}">
-                            <span class="fw-semibold">{{ questions.question }}</span>
+                            <span class="fw-semibold text-white">{{ questions.question }}</span>
                         </button>
                     </h2>
                     <!--I am getting a error for #collapseAftercare{{ questions.id }} but its the only way I have got the FAQ's to open and close without bugs-->
                     <div id="collapseAftercare{{ questions.id }}" class="accordion-collapse collapse"
                         data-bs-parent=".accordion">
                         <div class="accordion-body">
-                            <span class="text-dark">{{ questions.answer|linebreaksbr }}</span>
+                            <span class="text-white">{{ questions.answer|linebreaksbr }}</span>
                         </div>
                     </div>
                 </div>
