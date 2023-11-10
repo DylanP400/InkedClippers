@@ -4,6 +4,10 @@
     justify-content: center;
 }
 
+nav {
+    position: sticky;
+}
+
 /* ------------------------------------------------------------------------------General */
 
 a {
@@ -22,6 +26,7 @@ a:hover {
 body {
     background-color: rgb(33, 33, 33);
     height: 100dvh;
+    padding-top: 56px;
 }
 
 .txt-none {
