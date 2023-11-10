@@ -42,26 +42,31 @@
                     <!--If statement to only show certain nav links depending on logged in status-->
                     {% if user.is_authenticated %}
                     <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" href="{% url 'home-page' %}">Home</a>
+                        <a class="nav-link text-white" aria-current="page" aria-label="Home Page"
+                            href="{% url 'home-page' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" href="{% url 'barbers-page' %}">Barbers</a>
+                        <a class="nav-link text-white" aria-label="Barbers Page"
+                            href="{% url 'barbers-page' %}">Barbers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="{% url 'tattoo-page' %}">Tattoo</a>
+                        <a class="nav-link text-white" href="{% url 'tattoo-page' %}"
+                            aria-label="Tattoo Page">Tattoo</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" href="{% url 'home-page' %}">Home</a>
+                        <a class="nav-link text-white" aria-label="Home Page" href="{% url 'home-page' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" href="{% url 'about-page' %}">About</a>
+                        <a class="nav-link text-white" aria-label="About Page" href="{% url 'about-page' %}">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" aria-current="page" href="{% url 'barbers-page' %}">Barbers</a>
+                        <a class="nav-link text-white" aria-label="Barbers Page"
+                            href="{% url 'barbers-page' %}">Barbers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="{% url 'tattoo-page' %}">Tattoo</a>
+                        <a class="nav-link text-white" href="{% url 'tattoo-page' %}"
+                            aria-label="Tattoo Page">Tattoo</a>
                     </li>
                     {% endif %}
                 </ul>
@@ -109,11 +114,12 @@
     </div>
     {% endfor %}
     {% endif %}
-    {% block content %}{% endblock %}
+    {% block content %}
+    {% endblock %}
     <!--Contact details and opening times-->
     <footer class="mt-5">
         <div class="container-fluid align-content-center">
-            <div class="row bg-dark">
+            <div class="row">
                 <div class="col-lg-3 my-4">
                     <h2 class="text-white my-4 ms-5 text-start">Address</h2>
                     <p class="text-white text-start ms-5 fw-bold">Inked Clippers</p>
@@ -136,8 +142,8 @@
                         </span><a href="mailto: InkedClipers@gmail.com">InkedClippers@gmail.com</a></p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col d-flex justify-content-md-evenly justify-content-center fs-1 bg-dark">
+            <div class="row bg-dark">
+                <div class="col d-flex justify-content-md-evenly justify-content-center fs-1">
                     <a href="https://www.facebook.com" aria-label="Facebook" target="_blank" rel="noopener"><i
                             class="fa-brands fa-facebook mb-4 mx-2"></i></a>
                     <a href="https://www.twitter.com" aria-label="Twitter" target="_blank" rel="noopener"><i
