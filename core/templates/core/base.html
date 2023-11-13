@@ -96,13 +96,10 @@
                         <a class="nav-link d-none d-md-inline text-white" href="{% url 'login-page' %}">Login</a>
                     </li>
                     <!--These two buttons only show on mobile screens-->
-                    <li class="nav-item nav-btns">
-                        <button type="button" class="d-md-none bg-black text-white"><a
-                                href="{% url 'register-page' %}">Register</a>
-                        </button>
-                        <button type="button" class="d-md-none bg-black text-white">
-                            <a href="{% url 'login-page' %}">Login</a>
-                        </button>
+                    <li class="nav-item nav-btns gap-2">
+                        <a href="{% url 'profile-page' %}" class=" btn btn-sm d-md-none bg-black text-white button-link mr-2">Profile</a>
+                        <a href="{% url 'logout-page' %}" class=" btn btn-sm d-md-none bg-black text-white button-link">Logout</a>
+                        
                     </li>
                     {% endif %}
                 </ul>
@@ -144,7 +141,7 @@
                     <p class="text-white text-end me-5"><span class="fw-bold">Tel: </span><a
                             href="tel:085-123-000">0851230000</a></p>
                     <p class="text-white text-end me-3"><span class="fw-bold">Email:
-                        </span><a href="mailto: InkedClipers@gmail.com">InkedClippers@gmail.com</a></p>
+                        </span><a href="mailto:InkedClipers@gmail.com">InkedClippers@gmail.com</a></p>
                 </div>
             </div>
             <div class="row bg-dark pt-3">
