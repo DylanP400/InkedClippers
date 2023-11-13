@@ -81,9 +81,11 @@
                     </li>
                     <li class="nav-item nav-btns">
                         <button type="button" class="d-md-none bg-black text-white"><a
-                                href="{% url 'profile-page' %}">Profile</a></button>
-                        <button type="button" class="d-md-none bg-black text-white"><a
-                                href="{% url 'logout-page' %}">Logout</a></button>
+                                href="{% url 'profile-page' %}">Profile</a>
+                        </button>
+                        <button type="button" class="d-md-none bg-black text-white">
+                            <a href="{% url 'logout-page' %}">Logout</a>
+                        </button>
                     </li>
                     {% else %}
                     <li class="nav-item">
@@ -93,13 +95,16 @@
                     <li class="nav-item">
                         <a class="nav-link d-none d-md-inline text-white" href="{% url 'login-page' %}">Login</a>
                     </li>
-                    <div class="nav-btns">
-                        <button type="button" class="d-md-none bg-black text-whiter"><a
-                                href="{% url 'register-page' %}">Register</a></button>
+                    <!--These two buttons only show on mobile screens-->
+                    <li class="nav-item nav-btns">
                         <button type="button" class="d-md-none bg-black text-white"><a
-                                href="{% url 'login-page' %}">Login</a></button>
-                        {% endif %}
-                    </div>
+                                href="{% url 'register-page' %}">Register</a>
+                        </button>
+                        <button type="button" class="d-md-none bg-black text-white">
+                            <a href="{% url 'login-page' %}">Login</a>
+                        </button>
+                    </li>
+                    {% endif %}
                 </ul>
             </div>
         </div>
