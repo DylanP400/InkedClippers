@@ -34,7 +34,7 @@ body {
 }
 
 .blue {
-    color: blue;
+    color: rgb(35, 151, 245);
 }
 
 /*----------------------------------------------------------------------- Home page */
@@ -145,7 +145,6 @@ iframe {
 }
 
 .accordion-button::after {
-    color: white;
     background-color: white;
 }
 
@@ -202,7 +201,6 @@ iframe {
     width: fit-content;
     padding: 20px;
     margin: 20px;
-    background-color: (0, 0, 0, 0.5);
     border: 4px solid white;
     border-radius: 25px;
 }
@@ -212,7 +210,6 @@ iframe {
     width: fit-content;
     padding: 20px;
     margin: 20px;
-    background-color: (0, 0, 0, 0.5);
     border: 4px solid white;
     border-radius: 25px;
 }
@@ -225,16 +222,6 @@ iframe {
 }
 
 /* ------------------------------------------------------------------------ add_testimonial page */
-
-#reviews-container {
-    height: fit-content;
-    width: fit-content;
-    padding: 50px;
-    margin: 20px;
-    background-color: (0, 0, 0, 0.5);
-    border: 4px solid white;
-    border-radius: 25px;
-}
 
 .reviews-btn,
 .testimonial-btns {
