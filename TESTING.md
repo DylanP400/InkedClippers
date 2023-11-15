@@ -113,7 +113,7 @@
 
 </details>
 
-### core app
+### Core app
 
 <details>
 <summary>Core app urls.py</summary>
@@ -137,7 +137,7 @@
 </details>
 
 
-### users app
+### Users app
 
 <details>
 <summary>Users app models.py</summary>
@@ -183,4 +183,130 @@
 
 * ![Tattoo services](./static/images/readme/tattoo-services-v.png)
 
+</details>
+
+###
+
+# Lighthouse 
+
+<details>
+<summary>Home page</summary>
+
+* Desktop
+  * ![Home page desktop](./static/images/readme/lighthouse/home-page-desktop.png)
+
+* Mobile
+  * ![Home page mobile](./static/images/readme/lighthouse/home-page-mobile.png)
+
+
+</details>
+
+<details>
+<summary>About page</summary>
+
+* Desktop
+  * ![About page desktop](./static/images/readme/lighthouse/about-page-desktop.png)
+
+* Mobile
+  * ![Home page mobile](./static/images/readme/lighthouse/about-page-mobile.png)
+</details>
+
+<details>
+<summary>Barbers page</summary>
+
+* Desktop
+    * ![Barbers page desktop](./static/images/readme/lighthouse/barbers-page-desktop.png)
+
+* Mobile
+    * ![Barbers page mobile](./static/images/readme/lighthouse/barbers-page-mobile.png)
+</details>
+
+<details>
+<summary>Tattoo page</summary>
+
+* Desktop
+    * ![Tattoo page desktop](./static/images/readme/lighthouse/tattoo-page-desktop.png)
+
+* Mobile
+    * ![Home page mobile](./static/images/readme/lighthouse/tattoo-page-mobile.png)
+</details>
+
+<details>
+<summary>Profile page</summary>
+
+* Desktop
+    * ![Profie page desktop](./static/images/readme/lighthouse/profile-page-desktop.png)
+
+* Mobile
+    * ![Profile page mobile](./static/images/readme/lighthouse/profile-page-mobile.png)
+</details>
+
+<details>
+<summary>Register page</summary>
+
+* Desktop
+    * ![Register page desktop](./static/images/readme/lighthouse/register-page-desktop.png)
+
+* Mobile
+    * ![Register page mobile](./static/images/readme/lighthouse/register-page-mobile.png)
+</details>
+
+<details>
+<summary>Login page</summary>
+
+* Desktop
+    * ![Login page desktop](./static/images/readme/lighthouse/login-page-desktop.png)
+
+* Mobile
+    * ![Login page mobile](./static/images/readme/lighthouse/login-page-mobile.png)
+</details>
+
+<details>
+<summary>Add testimonial page</summary>
+
+* Desktop
+    * ![Add testimonial page desktop](./static/images/readme/lighthouse/add-testimonial-desktop.png)
+
+* Mobile
+    * ![Add testimonial page mobile](./static/images/readme/lighthouse/add-testimonial-mobile.png)
+</details>
+
+<details>
+<summary>Edit testimonial page</summary>
+
+* Desktop
+    * ![Edit testimonial page desktop](./static/images/readme/lighthouse/edit-testimonial-desktop.png)
+
+* Mobile
+    * ![Edit testimonial page mobile](./static/images/readme/lighthouse/edit-testimonial-mobile.png)
+</details>
+
+<details>
+<summary>Delete testimonial page</summary>
+
+* Desktop
+    * ![Delete testimonial page desktop](./static/images/readme/lighthouse/delete-testimonial-desktop.png)
+
+* Mobile
+    * ![Delete testimonial page mobile](./static/images/readme/lighthouse/delete-testimonial-mobile.png)
+</details>
+
+<details>
+<summary>Testimonial detail page</summary>
+
+* Desktop
+    * ![Testimonial detail page desktop](./static/images/readme/lighthouse/testimonial-detail-desktop.png)
+
+* Mobile
+    * ![Testimonial detail page mobile](./static/images/readme/lighthouse/testimonial-detail-mobile.png)
+</details>
+
+<details>
+<summary>Logout page</summary>
+
+* Desktop
+    * ![Logout page desktop](./static/images/readme/lighthouse/logout-desktop.png)
+
+* Mobile
+    * ![Logout page mobile](./static/images/readme/lighthouse/logout-mobile.png)
 </details>
