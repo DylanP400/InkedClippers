@@ -1,3 +1,16 @@
+# Contents
+
+* [Manual Testing]()
+
+* [Validation](#validation)
+
+* [Lighthouse](#lighthouse)
+
+* [Wave](#wave)
+
+* [Bugs]()
+
+
 # Validation
 
 ## HTML Validation
@@ -86,6 +99,15 @@
 
 </details>
 
+## CSS Validation
+
+
+<details>
+<summary>Main CSS</summary>
+
+* ![Main CSS](./static/images/readme/css/main-css-v.png)
+
+</details>
 
 ## Python Validation
 
@@ -309,4 +331,80 @@
 
 * Mobile
     * ![Logout page mobile](./static/images/readme/lighthouse/logout-mobile.png)
+</details>
+
+###
+
+# Wave
+
+<details>
+<summary>Home page</summary>
+
+* ![home page wave results](./static/images/readme/wave/home-page-wave.png)
+</details>
+
+<details>
+<summary>About page</summary>
+
+* ![About page wave results](./static/images/readme/wave/about-page-wave.png)
+</details>
+
+<details>
+<summary>Barbers page</summary>
+
+* ![Barbers page wave results](./static/images/readme/wave/barbers-page-wave.png)
+</details>
+
+<details>
+<summary>Tattoo page</summary>
+
+* ![Tattoo page wave results](./static/images/readme/wave/tattoo-page-wave.png)
+</details>
+
+<details>
+<summary>Register page</summary>
+
+* ![Register page wave results](./static/images/readme/wave/register-page-wave.png)
+</details>
+
+<details>
+<summary>Login page</summary>
+
+* ![Login page wave results](./static/images/readme/wave/login-wave.png)
+</details>
+
+<details>
+<summary>Profile page</summary>
+
+* ![Profile page wave results](./static/images/readme/wave/profile-wave.png)
+</details>
+
+<details>
+<summary>Add testimonial page</summary>
+
+* ![Add testimonial page wave results](./static/images/readme/wave/add-testimonial-wave.png)
+</details>
+
+<details>
+<summary>Testimonial detail page</summary>
+
+* ![Testimonial detail page wave results](./static/images/readme/wave/testimonial-detail-wave.png)
+</details>
+
+<details>
+<summary>Edit testimonial page</summary>
+
+* ![Edit testimonial page wave results](./static/images/readme/wave/edit-testimonial-wave.png)
+</details>
+
+<details>
+<summary>Delete testimonial page</summary>
+
+* ![Delete testimonial page wave results](./static/images/readme/wave/delete-testimonial-wave.png)
+</details>
+
+<details>
+<summary>Logout page</summary>
+
+* ![Logout page wave results](./static/images/readme/wave/logout-wave.png)
 </details>
