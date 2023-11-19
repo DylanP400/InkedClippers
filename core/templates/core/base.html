@@ -22,7 +22,25 @@
     <link rel="stylesheet" type="text/css" href="{% static 'core/main.css' %}">
     <!--script for fontawesome-->
     <script src="https://kit.fontawesome.com/aed26dd8dc.js" crossorigin="anonymous"></script>
+
+
+<!--Moved from base.css after removing whitenoise-->
+    <style>
+        .image-container {
+            height: 100dvh;
+        
+            background: url(https://res.cloudinary.com/dylanp400/image/upload/v1700245978/static/images/haircut-1.2ea7ca6807eb.webp) no-repeat center fixed;
+            background-size: cover;
+        
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        
+            position: relative;
+        }
+    </style>
 </head>
+
 
 <body>
     <nav class="navbar navbar-expand-md bg-dark fixed-top">

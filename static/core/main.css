@@ -68,19 +68,6 @@ body {
 }
 
 
-.image-container {
-    height: 100dvh;
-
-    background: url(../images/haircut-1.webp) no-repeat center fixed;
-    background-size: cover;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    position: relative;
-}
-
 .darken-image {
     position: absolute;
     top: 0;
