@@ -33,10 +33,8 @@
         <!-- If statement to only show to edit/delete buttons if its the users own testimonial
         -->
         {% if user.is_authenticated and user == object.user %}
-        <a href="{% url 'edit-testimonial-page' object.pk %}" class="btn btn-success mb-4">Edit
-            Testimonial</a>
-        <a href="{% url 'delete-testimonial-page' object.pk %}" class="btn btn-danger mb-4">Delete
-            Testimonial</a>
+        <a href="{% url 'edit-testimonial-page' object.pk %}" class="btn btn-success mb-4">Edit</a>
+        <a href="{% url 'delete-testimonial-page' object.pk %}" class="btn btn-danger mb-4">Delete</a>
         {% endif %}
     </div>
 </section>

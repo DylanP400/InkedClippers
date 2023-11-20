@@ -68,7 +68,7 @@ class UserTestimonial(models.Model):
     )
 
     BARBER = 'Barber'
-    TATTOO_ARTIST = 'tattoo artist'
+    TATTOO_ARTIST = 'Tattoo Artist'
     PIERCER = 'Piercer'
     SERVICE_CHOICES = [
         (BARBER, 'Barber'),
