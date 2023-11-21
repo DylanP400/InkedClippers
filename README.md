@@ -160,19 +160,19 @@ As a testament to my growth as a developer, Inked Clippers serves as my inaugura
 
     * The testimonials are made up of a star rating system, staff member, review and username.
 
-        <details>
-        <summary>Desktop view</summary>
+      <details>
+      <summary>Desktop view</summary>
 
-          * ![Testimonails Desktop View](./static/images/readme/website/testimonials-1-desktop.png)
+        * ![Testimonails Desktop View](./static/images/readme/website/testimonials-1-desktop.png)
 
-          * ![Testimonails Desktop View](./static/images/readme/website/testimonials-2-desktop.png)
-        
-        </details>
+        * ![Testimonails Desktop View](./static/images/readme/website/testimonials-2-desktop.png)
+      
+      </details>
 
-        <details>
-        <summary>Mobile view</summary>
+      <details>
+      <summary>Mobile view</summary>
 
-          * ![Testimonails Mobile View](./static/images/readme/website/testimonials-mobile.png)
+        * ![Testimonails Mobile View](./static/images/readme/website/testimonials-mobile.png)
 
   * Location
 
@@ -193,69 +193,70 @@ As a testament to my growth as a developer, Inked Clippers serves as my inaugura
       </details>
 
 * About Page
+
   * The about page is broken into four sections. The first section is a introducion to Inked Clippers with an image of a standard barbershop pole
 
-      <details>
-      <summary>Desktop view</summary>
+    <details>
+    <summary>Desktop view</summary>
 
-        * ![About Page section One Desktop View](./static/images/readme/website/about-page-1-desktop.png)
+      * ![About Page section One Desktop View](./static/images/readme/website/about-page-1-desktop.png)
 
-      </details>
+    </details>
 
-      <details>
-      <summary>Mobile view</summary>
+    <details>
+    <summary>Mobile view</summary>
 
-        * ![About Page section One Mobile View](./static/images/readme/website/about-page-1-mobile.png)
+      * ![About Page section One Mobile View](./static/images/readme/website/about-page-1-mobile.png)
 
-      </details>
+    </details>
 
   * the second section is a continuation of the first section the introduction and it has an image of three barber chairs.
 
-      <details>
-      <summary>Desktop view</summary>
+    <details>
+    <summary>Desktop view</summary>
 
-        * ![About Page section Two Desktop View](./static/images/readme/website/about-page-2-desktop.png)
+      * ![About Page section Two Desktop View](./static/images/readme/website/about-page-2-desktop.png)
 
-      </details>
+    </details>
 
-      <details>
-      <summary>Mobile view</summary>
+    <details>
+    <summary>Mobile view</summary>
 
-        * ![About Page section Two Mobile View](./static/images/readme/website/about-page-2-mobile.png)
+      * ![About Page section Two Mobile View](./static/images/readme/website/about-page-2-mobile.png)
 
-      </details>
+    </details>
 
   * The third section has the history of Inked Clippers and how it transformed from Clippers to Inked Clippers. It has two photos of the store.
 
-      <details>
-      <summary>Desktop view</summary>
+    <details>
+    <summary>Desktop view</summary>
 
-        * ![About Page section Three Desktop View](./static/images/readme/website/about-page-3-desktop.png)
+      * ![About Page section Three Desktop View](./static/images/readme/website/about-page-3-desktop.png)
 
-      </details>
+    </details>
 
-      <details>
-      <summary>Mobile view</summary>
+    <details>
+    <summary>Mobile view</summary>
 
-        * ![About Page section Three Mobile View](./static/images/readme/website/about-page-3-mobile.png)
+      * ![About Page section Three Mobile View](./static/images/readme/website/about-page-3-mobile.png)
 
-      </details>
+    </details>
 
   * The fourth section is all about feeling welcome it explains the vibe and atmosphere of Inked Clippers.
 
-      <details>
-      <summary>Desktop view</summary>
+    <details>
+    <summary>Desktop view</summary>
 
-        * ![About Page section Four Desktop View](./static/images/readme/website/about-page-4-desktop.png)
+      * ![About Page section Four Desktop View](./static/images/readme/website/about-page-4-desktop.png)
 
-      </details>
+    </details>
 
-      <details>
-      <summary>Mobile view</summary>
+    <details>
+    <summary>Mobile view</summary>
 
-        * ![About Page section Four Mobile View](./static/images/readme/website/about-page-4-mobile.png)
+      * ![About Page section Four Mobile View](./static/images/readme/website/about-page-4-mobile.png)
 
-      </details>
+    </details>
 
 * Barbers Page
 
