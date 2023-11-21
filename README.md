@@ -25,6 +25,8 @@ Inked Clippers is your one-stop destination for all things barbershop and tattoo
 
 * [Features](#features)
 
+* [Testing](#testing)
+
 * [Technologies Used](#technologies-usedS)
 
 * [Deployment](#deployment)
@@ -500,6 +502,10 @@ As a testament to my growth as a developer, Inked Clippers serves as my inaugura
 
     </details>
 
+
+# Testing
+
+I have made a seperate file for testing Inked Clippers all testing results can be found here [TESTING.md](TESTING.md).
 
 
 # Technologies Used

@@ -2,6 +2,10 @@
 
 * [Manual Testing](#manual-testing)
 
+* [Responsiveness](#responsiveness)
+
+* [Browsers](#)
+
 * [Validation](#validation)
 
 * [Lighthouse](#lighthouse)
@@ -11,82 +15,80 @@
 
 # Manual Testing
 
-## Desktop
-
 ### Nav Bar
 
-| Feature | User Action | Expected Result | Pass/Fail |
-| :---| :---| :---| :---|
-| Logo | Clicking on the Inked Clippers Logo | Redirects to the Home page | Pass |
-| Home | Clicking on the home link | Redirects to the Home page | Pass |
-| About | Clicking on the about link | Navigates to the About page | Pass |
-| Barbers | Clicking on the barbers link | Navigates to the Barbers page | Pass |
-| Tattoo | Clicking on the tattoo link | Navigates to the Tattoo page | Pass |
-| Register | Clicking on the Register link | Navigates to the Register page | Pass |
-| Login | Clicking on the Login link | Navigates to the Login page | Pass |
-| Profile | Clicking on the Profile link | Navigates to the Profile page | Pass |
-| Logout | Clicking on the logout link | Logs out the user | Pass |
+| Feature | User Action | Expected Result | Desktop Pass/Fail | Mobile Pass/Fail
+| :---| :---| :---| :---| :---|
+| Logo | Clicking on the Inked Clippers Logo | Redirects to the Home page | Pass | Pass |
+| Home | Clicking on the home link | Redirects to the Home page | Pass | Pass |
+| About | Clicking on the about link | Navigates to the About page | Pass | Pass |
+| Barbers | Clicking on the barbers link | Navigates to the Barbers page | Pass | Pass |
+| Tattoo | Clicking on the tattoo link | Navigates to the Tattoo page | Pass | Pass |
+| Register | Clicking on the Register link | Navigates to the Register page | Pass | Pass |
+| Login | Clicking on the Login link | Navigates to the Login page | Pass | Pass |
+| Profile | Clicking on the Profile link | Navigates to the Profile page | Pass | Pass |
+| Logout | Clicking on the logout link | Logs out the user | Pass | Pass |
 
 ### Footer
 
-| Feature | User Action | Expected Result | Pass/Fail |
-| :---| :---| :---| :---|
-| Facebook Icon | Clicking on the Facebook icon | Opens Facebook.com | Pass |
-| Twitter Icon | Clicking on the Facebook icon | Opens Twitter.com | Pass |
-| Linkedin Icon | Clicking on the Facebook icon | Opens my Linkedin profile | Pass |
-| Github Icon | Clicking on the Facebook icon | Opens the Inked Clippers repository | Pass |
-| Phone number link | Clicking on Inked Clippers phone number | Asks the user to make a call with there chosen application | Pass |
-| Email Address link | Clicking on Inked Clippers email address | Asks the user to open mail or gmail for sending an email | Pass |
+| Feature | User Action | Expected Result | Desktop Pass/Fail | Mobile Pass/Fail
+| :---| :---| :---| :---| :---|
+| Facebook Icon | Clicking on the Facebook icon | Opens Facebook.com | Pass | Pass |
+| Twitter Icon | Clicking on the Facebook icon | Opens Twitter.com | Pass | Pass |
+| Linkedin Icon | Clicking on the Facebook icon | Opens my Linkedin profile | Pass | Pass |
+| Github Icon | Clicking on the Facebook icon | Opens the Inked Clippers repository | Pass | Pass |
+| Phone number link | Clicking on Inked Clippers phone number | Asks the user to make a call with there chosen application | Pass | Pass |
+| Email Address link | Clicking on Inked Clippers email address | Asks the user to open mail or gmail for sending an email | Pass | Pass |
 
 
 ### Home Page
 
-| Feature | User Action | Expected Result | Pass/Fail |
-| :---| :---| :---| :---|
-| Down Arrow Button | When the user clicks the arrow pointing down | The user will be brought down to the testimonials section | Pass |
-| Paignation buttons for testimonials | When the user clicks the button 1, 2 or 3, | The user will be brought to the next section of testimonials | Pass |
-| Location Area | None | Location is displaying and the user can zoom and move around the map  | Pass |
+| Feature | User Action | Expected Result | Desktop Pass/Fail | Mobile Pass/Fail
+| :---| :---| :---| :---| :---|
+| Down Arrow Button | When the user clicks the arrow pointing down | The user will be brought down to the testimonials section | Pass | Pass
+| Paignation buttons for testimonials | When the user clicks the button 1, 2 or 3, | The user will be brought to the next section of testimonials | Pass | Pass
+| Location Area | None | Location is displaying and the user can zoom and move around the map  | Pass | Pass
 
 
 ### Tattoo Page
 
-| Feature | User Action | Expected Result | Pass/Fail |
-| :---| :---| :---| :---|
-| Faq's buttons | The user clicks the arrow button to see more information for the common question | The Box extends to show the answer to the question | Pass |
-| | The user clicks the arrow button to hide the answer to the question | The Box closes | Pass |
-|  | The user clicks the arrow button for another question while having the last question box open | The previously viewed question will close and the new question will open | Pass |
+| Feature | User Action | Expected Result | Desktop Pass/Fail | Mobile Pass/Fail
+| :---| :---| :---| :---| :---|
+| Faq's buttons | The user clicks the arrow button to see more information for the common question | The Box extends to show the answer to the question | Pass | Pass
+| | The user clicks the arrow button to hide the answer to the question | The Box closes | Pass | Pass
+|  | The user clicks the arrow button for another question while having the last question box open | The previously viewed question will close and the new question will open | Pass | Pass
 
 
 ### Register Page
 
-| Feature | User Action | Expected Result | Pass/Fail |
-| :---| :---| :---| :---|
-| Account registration form | The user fills out the form to create an account | An account is created for the user | Pass |
-| | The user trys to create an account with a username that is already registered | An error pops up in red telling the user "A user with that username already exists" | Pass |
-| |  If the user trys to sign up with an email already registered | The user is unable to create an account and has to pick a email that is not already registered | Fail
-| Sign up button | The user clicks the sign up button to create an account | The users account is created and they are logged in and redirected to the home page | Pass
-| Already have an account? Sign in | When the user already has an account and click the sign in link | The user is redirected to the login page | Pass
+| Feature | User Action | Expected Result | Desktop Pass/Fail | Mobile Pass/Fail
+| :---| :---| :---| :---| :---|
+| Account registration form | The user fills out the form to create an account | An account is created for the user | Pass | Pass |
+| | The user trys to create an account with a username that is already registered | An error pops up in red telling the user "A user with that username already exists" | Pass | Pass |
+| |  If the user trys to sign up with an email already registered | The user is unable to create an account and has to pick a email that is not already registered | Fail | Fail |
+| Sign up button | The user clicks the sign up button to create an account | The users account is created and they are logged in and redirected to the home page | Pass | Pass |
+| Already have an account? Sign in | When the user already has an account and click the sign in link | The user is redirected to the login page | Pass | Pass |
 
 ### Login Page
 
-| Feature | User Action | Expected Result | Pass/Fail |
-| :---| :---| :---| :---|
-| Login form | The user trys to login with an account that doesnt exist or with the wrong password | An error message pops up telling the user to "Please enter a correct username and password. Note that both fields may be case-sensitive." | Pass
-| Sign up button | The user click enters there login information and clicks Login | The user is logged in and redirected to the home page | Pass
-| Create An Account? Sign up link | The user doesnt have an account and clicks sign up | The user is redirected to the Register page | Pass
+| Feature | User Action | Expected Result | Desktop Pass/Fail | Mobile Pass/Fail
+| :---| :---| :---| :---| :---|
+| Login form | The user trys to login with an account that doesnt exist or with the wrong password | An error message pops up telling the user to "Please enter a correct username and password. Note that both fields may be case-sensitive." | Pass | Pass |
+| Sign up button | The user click enters there login information and clicks Login | The user is logged in and redirected to the home page | Pass | Pass |
+| Create An Account? Sign up link | The user doesnt have an account and clicks sign up | The user is redirected to the Register page | Pass | Pass |
 
 
 ### Profile Page
 
-| Feature | User Action | Expected Result | Pass/Fail |
-| :---| :---| :---| :---|
-| Update profile form | The user updates there profile | The page refreshes and the profile is updated | Pass
-| The user try to change there name to an already taken name | An error message pops up telling the user "A user with that username already exists." | Pass
-| Update button | After changing the user information the user click update | The page refreshes and the profile is updated | Pass
-| Leave a review button | The user clicks the leave review button | The user is redirected to the add testimonial page | Pass
-| User testimonial link | The user clicks the content inside there own testimonial | The user is redirected two the testimonial detail page | Pass
-| Edit testimonial button | The user clicks the edit testimonial button | The user is redirected to the edit testimonial page | Pass
-| Delete testimonial button | The user clicks the delete testimonial button | The user is redirected to the delete testimonial page | Pass
+| Feature | User Action | Expected Result | Desktop Pass/Fail | Mobile Pass/Fail
+| :---| :---| :---| :---| :---|
+| Update profile form | The user updates there profile | The page refreshes and the profile is updated | Pass | Pass |
+| | The user try to change there name to an already taken name | An error message pops up telling the user "A user with that username already exists." | Pass | Pass |
+| Update button | After changing the user information the user click update | The page refreshes and the profile is updated | Pass | Pass |
+| Leave a review button | The user clicks the leave review button | The user is redirected to the add testimonial page | Pass | Pass |
+| User testimonial link | The user clicks the content inside there own testimonial | The user is redirected two the testimonial detail page | Pass | Pass |
+| Edit testimonial button | The user clicks the edit testimonial button | The user is redirected to the edit testimonial page | Pass | Pass |
+| Delete testimonial button | The user clicks the delete testimonial button | The user is redirected to the delete testimonial page | Pass | Pass |
 
 
 ### Add Testimonial Page
@@ -128,9 +130,51 @@
 | :---| :---| :---| :---| :---|
 | Sign in link | The user logs out and click the sign in link | The user is redirected to the login page | Pass | Pass
 
+
+# Responsiveness
+
+I tested through all these devices with [Responsive Design Checker](https://responsivedesignchecker.com/)
+
+
+### Desktop
+
+| Screen Size | Pass/Fail |
+| :---| :---|
+| 32" | Pass |
+| 24" | Pass |
+| 22" | Pass |
+| 20" | Pass |
+| 15" | Pass |
+| 13" | Pass |
+| 10" | Pass |
+
+### Mobile
+
+| Device | Pass/Fail |
+| :---| :---|
+| Apple iPhone 3/4/4s | Pass |
+| Apple iphone 6/6s/7 | Pass |
+| Samsung Galaxy S5/S6/S7 | Pass |
+| Nexus 4 | Pass |
+| Google Pixel | Pass |
+
+
+# Browsers
+
+| Browser | Pass/Fail |
+| :---| :---|
+| Chrome | Pass |
+| Fire Fox | Pass |
+| Safari | Pass |
+| Edge | Pass |
+| Opera | Pass |
+
+
 # Validation
 
 ## HTML Validation
+
+For testing the **HTML** code I used [W3C Validator](https://validator.w3.org/). After fixing a few small errors the HTML code is error free with no warnings.
 
 <details>
 <summary>Home page</summary>
@@ -218,6 +262,7 @@
 
 ## CSS Validation
 
+For testing the **CSS** code I used [W3C Jigsaw](https://jigsaw.w3.org/css-validator/) The **CSS File** has no errors.
 
 <details>
 <summary>Main CSS</summary>
@@ -227,6 +272,14 @@
 </details>
 
 ## Python Validation
+
+For testing the python code I used [Code Institutes CI Python Linter](https://pep8ci.herokuapp.com/)
+
+* Warnings
+    * Settings.py
+        * Six warnings of line too long.
+    * user app models.py
+        * I couldnt do anything about this error because it was a link that was too long.
 
 ### Inked clippers app
 
@@ -326,7 +379,9 @@
 
 ###
 
-# Lighthouse 
+# Lighthouse
+
+Lighthouse scores are all in the high 90s and green.
 
 <details>
 <summary>Home page</summary>
@@ -354,7 +409,7 @@
 <summary>Barbers page</summary>
 
 * Desktop
-    * ![Barbers page desktop](./static/images/readme/lighthouse/barbers-page-desktop.png)
+    * ![Barbers page desktop](./static/images/readme/lighthouse/barbers-desktop.png)
 
 * Mobile
     * ![Barbers page mobile](./static/images/readme/lighthouse/barbers-page-mobile.png)
@@ -364,7 +419,7 @@
 <summary>Tattoo page</summary>
 
 * Desktop
-    * ![Tattoo page desktop](./static/images/readme/lighthouse/tattoo-page-desktop.png)
+    * ![Tattoo page desktop](./static/images/readme/lighthouse/tattoo-desktop.png)
 
 * Mobile
     * ![Home page mobile](./static/images/readme/lighthouse/tattoo-page-mobile.png)
@@ -454,6 +509,7 @@
 
 # Wave
 
+
 <details>
 <summary>Home page</summary>
 
@@ -494,6 +550,7 @@
 <summary>Profile page</summary>
 
 * ![Profile page wave results](./static/images/readme/wave/profile-wave.png)
+* I have one empty link error I have a bug in the profile information form it has a section for the currently selected profile photo but it doesnt show the name of the image and it is empty and got flagged by wave
 </details>
 
 <details>
