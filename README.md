@@ -97,20 +97,43 @@ As a testament to my growth as a developer, Inked Clippers serves as my inaugura
 
 # Features
 
-## Exisiting Features
+## Existing Features
 
-* Navigation Bar
-  * The navigation bar is at the top of every page and has the logo with links to the About page, Barbers page, Tattoo page, Register and Log in pages.
+* Nav
+  * The nav bar is at the top of every page and has the logo with links to the About page, Barbers page, Tattoo page, Register and Log in pages.
 
-    * Once the user is logged in the link to the About page disappears and the Register link changes to your profile while Login changes to Log out.
+    * Once the user is logged in the link to the About page is hidden and the Register link changes to profile while Login changes to Log out.
 
-    * ![Nav Bar Desktop View]()
+    <details>
+      <summary>Desktop view</summary>
 
-    * ![Nav Bar Mobile View]()
+      * ![Nav Bar Desktop View](./static/images/readme/website/navbar-desktop.png)
 
-* Footer
+    </details>
 
+    <details>
+        <summary>Mobile view</summary>
+
+      * ![Nav Bar Mobile View](./static/images/readme/website/navbar-mobile.png)
+
+      </details>
+
+* The Footer
   * The footer is at the bottom of every page and has the address, opening times and the contact details of Inked Clippers. Underneath the barbershop information it has social media links to find the barbers on Facebook, Twitter(X), Github and Linkedin.
+
+    <details>
+    <summary>Desktop view</summary>
+
+      * ![Footer Desktop View](./static/images/readme/website/footer-desktop.png)
+
+    </details>
+
+    <details>
+    <summary>Mobile view</summary>
+
+      * ![Footer Page Mobile View](./static/images/readme/website/footer-mobile.png)
+
+    </details>
 
 * Home Page
   * The Landing page Image
@@ -118,44 +141,121 @@ As a testament to my growth as a developer, Inked Clippers serves as my inaugura
     * When the website first loads you see an image of a man getting hes hair cut with writing that says "Precision Cuts, Timeless Tattoos
     Unleash Your Style at Inked Clippers!" underneath the callout there is a white button blinking if you click this button it will scroll down and take you to the testimonials section.
 
-    * ![Landing Page Desktop View]()
+      <details>
+      <summary>Desktop view</summary>
 
-    * ![Landing Page Mobile View]()
+        * ![Landing Page Desktop View](./static/images/readme/website/home-page-desktop.png)
+
+      </details>
+
+      <details>
+      <summary>Mobile view</summary>
+
+        * ![Landing Page Mobile View](./static/images/readme/website/home-page-mobile.png)
+
+      </details>
 
   * Testimonials
     * Testimonials is a section where people that have signed up for Inked Clippers can leave a review and tell there experience with the store and staff. If you are logged in there is a button that allows you to add your own review to the site.
 
     * The testimonials are made up of a star rating system, staff member, review and username.
 
-    * ![Testimonails Desktop View]()
+        <details>
+        <summary>Desktop view</summary>
 
-    * ![Testimonails Mobile View]()
+          * ![Testimonails Desktop View](./static/images/readme/website/testimonials-1-desktop.png)
+
+          * ![Testimonails Desktop View](./static/images/readme/website/testimonials-2-desktop.png)
+        
+        </details>
+
+        <details>
+        <summary>Mobile view</summary>
+
+          * ![Testimonails Mobile View](./static/images/readme/website/testimonials-mobile.png)
 
   * Location
+
     * After you scroll past the testimonial section you have the location of the shop at the bottom of the page just above the footer.
 
-    * ![Location Desktop View]()
+      <details>
+      <summary>Desktop view</summary>
 
-    * ![Location Mobile View]()
+        * ![Location Desktop View](./static/images/readme/website/location-desktop.png)
+
+      </details>
+
+      <details>
+      <summary>Desktop view</summary>
+
+        * ![Location Mobile View](./static/images/readme/website/location-mobile.png)
+
+      </details>
 
 * About Page
-  * The about page is broken into three sections. The first section is a introducion to Inked Clippers with three images one of a barber pole, the second is of the town of Ennis and the third is a barber chair.
+    * The about page is broken into four sections. The first section is a introducion to Inked Clippers with an image of a standard barbershop pole
 
-    * ![About Page section One Desktop View]()
+        <details>
+        <summary>Desktop view</summary>
 
-    * ![About Page section One Mobile View]()
+          * ![About Page section One Desktop View](./static/images/readme/website/about-page-1-desktop.png)
 
-  * The second section has the history of Inked Clippers and how it transformed from Clippers to Inked Clippers. It has two photos of the store.
+        </details>
 
-    * ![About Page section Two Desktop View]()
+        <details>
+        <summary>Mobile view</summary>
 
-    * ![About Page section Two Mobile View]()
+          * ![About Page section One Mobile View](./static/images/readme/website/about-page-1-mobile.png)
 
-  * The third section is all about feeling welcome it explains the vibe and atmosphere of Inked Clippers.
+        </details>
 
-    * ![About Page section Three Desktop View]()
+    * the second section is a continuation of the first section the introduction and it has an image of three barber chairs.
 
-    * ![About Page section Three Mobile View]()
+        <details>
+        <summary>Desktop view</summary>
+
+          * ![About Page section Two Desktop View](./static/images/readme/website/about-page-2-desktop.png)
+
+        </details>
+
+        <details>
+        <summary>Mobile view</summary>
+
+          * ![About Page section Two Mobile View](./static/images/readme/website/about-page-2-mobile.png)
+
+        </details>
+
+    * The third section has the history of Inked Clippers and how it transformed from Clippers to Inked Clippers. It has two photos of the store.
+
+        <details>
+        <summary>Desktop view</summary>
+
+          * ![About Page section Three Desktop View](./static/images/readme/website/about-page-3-desktop.png)
+
+        </details>
+
+        <details>
+        <summary>Mobile view</summary>
+
+          * ![About Page section Three Mobile View](./static/images/readme/website/about-page-3-mobile.png)
+
+        </details>
+
+    * The fourth section is all about feeling welcome it explains the vibe and atmosphere of Inked Clippers.
+
+        <details>
+        <summary>Desktop view</summary>
+
+          * ![About Page section Four Desktop View](./static/images/readme/website/about-page-4-desktop.png)
+
+        </details>
+
+        <details>
+        <summary>Mobile view</summary>
+
+          * ![About Page section Four Mobile View](./static/images/readme/website/about-page-4-mobile.png)
+
+        </details>
 
 * Barbers Page
 
@@ -163,50 +263,129 @@ As a testament to my growth as a developer, Inked Clippers serves as my inaugura
 
     * The services is displayed as a table and it has all the services the barbershop provides with the price and a discount price for members that have created a page.
 
-    * ![Barbers Page Services Desktop View]()
+      <details>
+      <summary>Desktop view</summary>
 
-    * ![Barbers Page Services Mobile View]()
+      * ![Barbers Page Services Desktop View](./static/images/readme/website/barbers-page-1-desktop.png)
+
+      </details>
+
+      <details>
+      <summary>Mobile view</summary>
+
+      * ![Barbers Page Services Mobile View](./static/images/readme/website/barbers-page-1-mobile.png)
+
+      </details>
 
     * Meet the barbers has the 4 barbers profile displayed in cards it has the barbers name, image, role/nickname and a bio with there information.
 
-    * ![Barbers Page Employees Desktop View]()
+      <details>
+      <summary>Desktop view</summary>
 
-    * ![Barbers Page Employees Mobile View]()
+      * ![Barbers Page Employees Desktop View](./static/images/readme/website/barbers-page-2-desktop.png)
+
+      </details>
+
+      <details>
+      <summary>Mobile view</summary>
+
+      * ![Barbers Page Employees Mobile View](./static/images/readme/website/barbers-page-2-mobile.png)
+
+      </details>
+
 
 * Tattoo Page
+
   * The Tattoo Page is broken into 3 sections piercing services, Meet the artist and piecer, and a FAQ's for commonly asked questions.
 
     * The first section is a set of 4 tables all showing the piecer services for Ear Piercings, Facial Piercings, Oral Piercings and Body Piercings
 
-    * ![Tattoo Page services Desktop View]()
+      <details>
+      <summary>Desktop view</summary>
 
-    * ![Tattoo Page services Mobile View]()
+      * ![Tattoo Page Services Desktop View](./static/images/readme/website/tattoo-page-1-desktop.png)
+
+      </details>
+
+      <details>
+      <summary>Mobile view</summary>
+
+      * ![Tattoo Page Services Mobile View](./static/images/readme/website/tattoo-page-1-mobile.png)
+
+      </details>
 
     * The second section is a meet the Tattoo shop employees its the same layout as seen on the barber page with artists name, image, role/nickname and a bio with there information.
 
-    * ![Tatto page  employees Desktop View]()
+      <details>
+      <summary>Desktop view</summary>
 
-    * ![Tattoo Page employees Mobile View]()
+      * ![Tattoo Page Employees Desktop View](./static/images/readme/website/tattoo-page-2-desktop.png)
+
+      </details>
+
+      <details>
+      <summary>Mobile view</summary>
+
+      * ![Tattoo Page Services Mobile View](./static/images/readme/website/tattoo-page-2-mobile.png)
+
+      </details>
 
     * The third section is a FAQ's for commonly asked questions for getting a tattoo and the aftercare.
 
-    * ![Tatto page  FAQ's Desktop View]()
+      <details>
+      <summary>Desktop view</summary>
 
-    * ![Tattoo Page FAQ's Mobile View]()
+      * ![Tattoo Page FAQ's Desktop View](./static/images/readme/website/tattoo-page-3-desktop.png)
+
+      * ![Tattoo Page FAQ's Desktop View](./static/images/readme/website/tattoo-page-4-desktop.png)
+
+      </details>
+
+      <details>
+      <summary>Mobile view</summary>
+
+      * ![Tattoo Page FAQ'S Mobile View](./static/images/readme/website/tattoo-page-3-mobile.png)
+      * ![Tattoo Page FAQ'S Mobile View](./static/images/readme/website/tattoo-page-4-mobile.png)
+
+      </details>
 
 * Register Page
+
   * The register page has a form for making a account for Inked Clippers if you already have a account it has a link to the login page underneath the sign up button
 
-    * ![Register Page Desktop View]()
+    <details>
+    <summary>Desktop view</summary>
 
-    * ![Register Page Mobile View]()
+    * ![Register Page Desktop View](./static/images/readme/website/register-page-1-desktop.png)
+    * ![Register Page Desktop View](./static/images/readme/website/register-page-2-desktop.png)
+
+    </details>
+
+    <details>
+    <summary>Mobile view</summary>
+
+    * ![Register Page Mobile View](./static/images/readme/website/register-page-1-mobile.png)
+    * ![Register Page Mobile View](./static/images/readme/website/register-page-2-mobile.png)
+
+    </details>
 
 * Login Page
+
   * The Login page has a form for loging into your account if you dont have a account it has a link to the register page underneath the Login button
 
-    * ![Login Page Desktop View]()
+    <details>
+      <summary>Desktop view</summary>
 
-    * ![Login Page Mobile View]()
+      * ![Login Page Desktop View](./static/images/readme/website/login-page-desktop.png)
+
+    </details>
+
+    <details>
+      <summary>Mobile view</summary>
+
+      * ![Login Page Mobile View](./static/images/readme/website/login-page-mobile.png)
+
+    </details>
 
 * Profile Page
 
@@ -214,52 +393,111 @@ As a testament to my growth as a developer, Inked Clippers serves as my inaugura
 
   * Underneath your profile information there is a form prepopulated with your information you have the option to update your details within this form.
 
-    * ![Profile Page Desktop View]()
+    <details>
+      <summary>Desktop view</summary>
 
-    * ![Profile Page Mobile View]()
+      * ![Profile Page Desktop View](./static/images/readme/website/profile-page-1-desktop.png)
+      * ![Profile Page Desktop View](./static/images/readme/website/profile-page-2-desktop.png)
+
+    </details>
+
+    <details>
+      <summary>Mobile view</summary>
+
+      * ![Profile Page Mobile View](./static/images/readme/website/profile-page-1-mobile.png)
+      * ![Profile Page Mobile View](./static/images/readme/website/profile-page-2-mobile.png)
+      * ![Profile Page Mobile View](./static/images/readme/website/profile-page-3-mobile.png)
+
+    </details>
 
 * Logout Page
   * Once you click logout in the navbar you are taken to the logout page which confirms you have been logged out and gives you the option the login again.
 
-    * ![Logout Page Desktop View]()
+    <details>
+      <summary>Desktop view</summary>
 
-    * ![Logout Page Mobile View]()
+      * ![Logout Page Desktop View](./static/images/readme/website/logout-desktop.png)
+
+    </details>
+
+    <details>
+      <summary>Mobile view</summary>
+
+      * ![Login Page Mobile View](./static/images/readme/website/logout-page-mobile.png)
+
+    </details>
 
 * Add a testimonial page
-  * If you are logged in and clicked the add testimonial button on the home page you are taken to the add_testimonial page which has a form for creating a testimonial.
 
-    * ![Add Testimonial Desktop View]()
+  * If you are in your profile and click the leave a review button you will be redirected to the add testimonial page which has a form for creating a testimonial.
 
-    * ![Add Testimonial Mobile View]()
+    <details>
+      <summary>Desktop view</summary>
+
+      * ![Add Testimonial Desktop View](./static/images/readme/website/add-testimonial-desktop.png)
+
+    </details>
+
+    <details>
+      <summary>Mobile view</summary>
+
+      * ![Add Testimonial Mobile View](./static/images/readme/website/add-testimonial-mobile.png)
+
+    </details>
 
 * Testimonial detail Page
-  * If you click on a testimonial it will bring you to the Testimonial detail page which will show you the testimonial.
 
-    * ![Testimonial Detail Desktop View]()
+  * If you click on your own testimonial in your profile it will bring you to the Testimonial Detail page which will show you the testimonial.
 
-    * ![Testimonial Detail Mobile View]()
+    <details>
+      <summary>Desktop view</summary>
 
-  * If you are logged in and clicked on your own testimonial you have the option to edit or delete your review.
+      * ![Testimonial Detail Desktop View](./static/images/readme/website/testimonial-detail-desktop.png)
 
-    * ![Testimonial Detail Edit/Delete Desktop View]()
+    </details>
 
-    * ![Testimonial Detail Edit/Delete Mobile View]()
+    <details>
+      <summary>Mobile view</summary>
 
-* usertestimonial_form
+      * ![Testimonial Detail Mobile View](./static/images/readme/website/testimonial-detail-mobile.png)
 
-  * If you are logged in and click edit on your own testimonial on the testimonial detail page you are taken to the usertestimonial_form which is a page that has a prepopluated form for updating your testimonial.
+    </details>
 
-    * ![userestimonial_form Desktop View]()
+* Edit Testimonial Page
 
-    * ![userestimonial_form Mobile View]()
+  * If you are in your profile there will be two buttons underneath your testimonial clicking edit will bring you to a form with your testimonial information pre populated
 
-* usertestimonail_confirm_delete
+    <details>
+      <summary>Desktop view</summary>
 
-  * If you are logged in and click delete on your own testimonial on the testimonial detail page you are taken to the usertestimonail_confirm_delete which is a page that confirms that you want to delete your testimonial. If you change your mind there is also a button to take you back to the home page.
+      * ![Edit Testimonial Desktop View](./static/images/readme/website/edit-testimonial-desktop.png)
 
-    * ![usertestimonial_confirm_delete Desktop View]()
+    </details>
 
-    * ![usertestimonial_confirm_delete Mobile View]()
+    <details>
+      <summary>Mobile view</summary>
+
+      * ![Edit Testimonial Mobile View](./static/images/readme/website/edit-testimonial-mobile.png)
+
+    </details>
+
+* Delete Testimonial Page
+
+  * If you are in your profile and click the delete button under your testimonial you will be brought too add page asking if you are sure you want to delete. If you change your mind there is also a button to take you back to the home page.
+
+    <details>
+      <summary>Desktop view</summary>
+
+      * ![Delete Testimonial Desktop View](./static/images/readme/website/delete-testimonial-desktop.png)
+
+    </details>
+
+    <details>
+      <summary>Desktop view</summary>
+
+      * ![Delete Testimonial Desktop View](./static/images/readme/website/delete-testimonial-mobile.png)
+
+    </details>
 
 
 
