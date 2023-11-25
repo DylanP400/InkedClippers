@@ -533,10 +533,6 @@ I have made a seperate file for testing Inked Clippers all testing results can b
 
 * [Favicon](https://www.favicon-generator.org/) - Used to make a Favicon for the website.
 
-* [Coolors](https://coolors.co/808080-ff0000-ffffff-f5f5f5-000000) - For my colour scheme.
-
-* [Lamba Testing](https://www.lambdatest.com/?fp_ref=ngan15&gclid=Cj0KCQjwocShBhCOARIsAFVYq0i7XM8lENlC8yIrumBcCkS42VLHZfT6Fjc5waFzBGuNk6OCc7kIBFUaAou3EALw_wcB) - Was used for testing resposiveness across various devices.
-
 * [Favicon Generator](https://www.favicon-generator.org/) - Was
  used to make the favicon.
 
@@ -552,8 +548,6 @@ I have made a seperate file for testing Inked Clippers all testing results can b
 
 * [Cloudinary](https://cloudinary.com/) - For hosting Inked Clippers images.
 
-* [WhiteNoise](https://whitenoise.readthedocs.io/en/latest/) - For hosting static files.
-
 * [Django Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - Enhanced form rendering for Django.
 
 * [psycopg2](https://pypi.org/project/psycopg2/) - PostgreSQL adapter for Python.
@@ -562,22 +556,119 @@ I have made a seperate file for testing Inked Clippers all testing results can b
 
 * [sqlparse](https://pypi.org/project/sqlparse/) - A Python library for parsing and formatting SQL queries.
 
-
 # Deployment
+
+## ElephantSQL Database Setup
+
+### Step 1: Obtain ElephantSQL Database URL
+
+1. **Sign up or sign in to ElephantSQL:**
+   * If you don't have an account, sign up otherwise, log in to your account.
+
+2. **Create a new ElephantSQL instance:**
+   * From the dashboard, click on `Create New Instance`.
+   * Choose a plan based on your requirements.
+
+3. **Retrieve your ElephantSQL Database URL:**
+   * Once the instance is created, click on it to view details.
+   * Find and copy the `URL` provided this is your `ElephantSQL Database URL`.
+
+### Step 2: Configure Django Project
+
+1. **Add DATABASE_URL to env.py:**
+   * Open your `env.py` file.
+   * Set `DATABASE_URL` to the value obtained from ElephantSQL.
+
+### Step 3: Use DATABASE_URL in Django Settings
+
+1. **Update Django Settings:**
+   * Open your `settings.py` file in your Django project.
+   * Locate the `DATABASES` configuration.
+   * Comment out the orignal django database settings
+   * Update the `DATABASES` setting to use the `dj_database_url` package:
+
+     ```python
+     import dj_database_url
+     # At the top of settings.py with the other imports
+
+     DATABASES = {
+     'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+      }
+      # Replace the orignal database with what is above
+
+     ```
+
+   * This allows your Django project to use the ElephantSQL Database URL.
+
+2. **Migrate Database Changes:**
+   * Run the following commands in your terminal:
+
+     ```bash
+     python manage.py makemigrations
+     python manage.py migrate
+     ```
+
+   * This ensures that your database is updated with the latest changes.
 
 ## Heroku
 
-* Steps for deployment.
-* Fork or clone this repository.
-* Create a new Heroku app.
-* Link the Heroku app to the repository.
-* Click on **Deploy**.
+## Step 1: Prepare Environment Variables
+
+Create an `env.py` file at the root level of your project. Copy and paste the following content into the file:
+
+```python
+import os
+
+# Replace placeholders with your actual values
+os.environ['DATABASE_URL'] = 'Your_ElephantSQL_Database_url'
+os.environ['SECRET_KEY'] = 'Your_Django_secret_key'
+os.environ['CLOUDINARY_URL'] = 'Your_Cloudinary_url'
+```
+
+## Step 2: Heroku App Setup
+
+1. **Sign up or sign in to your Heroku account:**
+   * If you don't have an account, sign up otherwise, log in to your account.
+
+2. **Create a new app from the Heroku dashboard:**
+   * Choose a name for your app.
+   * Select the region that is most suitable for you.
+
+3. **Configure app settings:**
+   * In the app's settings, find and click on 'Reveal Config Vars'.
+   * Add the following variables with their corresponding values:
+     * `DATABASE_URL`: Your ElephantSQL Database URL
+     * `SECRET_KEY`: Your chosen Django secret key
+     * `CLOUDINARY_URL`: Your Cloudinary URL
+     * `DISABLE_COLLECTSTATIC`: Set to `1` for initial deployment
+     * `PORT`: Set to `8000`
+
+## Step 3: Deployment from GitHub
+
+1. **Choose the Deploy option:**
+   * Go to the Deploy tab in your app dashboard.
+
+2. **Connect to GitHub:**
+   * Under Deployment method, choose Connect to GitHub.
+
+3. **Select your GitHub repository:**
+   * Find your GitHub repository by name and connect.
+
+4. **Choose deployment method:**
+   * At the bottom of the page, choose either Automatic Deployment or Manual Deployment (deploy by branch).
+
+5. **Initiate deployment:**
+   * Click on the option you prefer, and the deployment process should begin.
+
+6. **Monitor deployment progress:**
+   * After a while, your app should be deployed. You can check the progress in the Heroku dashboard.
+
 
 ## Local Deployment
 
 ### How to Fork
 
-To fork the repository:
+**To fork the repository:**
 
 1. Log in to Github.
 2. Go to the repository for this project, [DylanP400/InkedClippers](https://github.com/DylanP400/terminal-dice-pp3)
@@ -585,7 +676,7 @@ To fork the repository:
 
 ### How to clone
 
-To clone the repository:
+**To clone the repository**
 
 1. Log in to GitHub.
 2. Go to the repository for this project, [DylanP400/InkedClippers](https://github.com/DylanP400/InkedClippers)
