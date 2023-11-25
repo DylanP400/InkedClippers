@@ -1,5 +1,7 @@
 # Inked Clippers Barbershop & Tattoo Studio
 
+![Am I responsive image](./static/images/readme/am_i_responsive.png)
+
 Welcome to Inked Clippers!
 
 Inked Clippers is your one-stop destination for all things barbershop and tattoo studio. Our platform brings together skilled barbers, talented tattoo artists, and expert piercers to showcase their services and connect with potential clients. Whether you're looking for a fresh haircut, a unique tattoo, or a stylish body piercing, Inked Clippers has got you covered.
@@ -27,9 +29,14 @@ Inked Clippers is your one-stop destination for all things barbershop and tattoo
 
 * [Testing](#testing)
 
-* [Technologies Used](#technologies-usedS)
+* [Technologies Used](#technologies-used)
 
 * [Deployment](#deployment)
+
+  * [ElephantSQL](#elephantsql-database-setup)
+  * [Heroku](#heroku)
+  * [Local Deployment](#local-deployment)
+
 
 
 
@@ -528,6 +535,8 @@ I have made a seperate file for testing Inked Clippers all testing results can b
 * [Google Dev Tools](https://developer.chrome.com/docs/devtools/) - To troubleshoot and test features, solve issues with responsiveness and styling.
 
 * [AM I Resposnsive?](https://amiresponsive.co.uk/) - Used to show the Website image on a range of devices.
+
+* [Responsive Design Checker](https://responsivedesignchecker.com/) - For checking the responsiveness across mulitiple devices and screen widths
 
 * [Shields](https://shields.io/) - For the shields at the top of the README.
 
