@@ -28,6 +28,8 @@ Inked Clippers is your one-stop destination for all things barbershop and tattoo
 
   * [User Stories](#user-stories)
 
+* [Wireframes](#wireframes)
+
 * [Features](#features)
 
 * [Testing](#testing)
@@ -139,6 +141,76 @@ This Kanban board provided a clear visual representation of my project's progres
 
 * As a **customer**, I want to **browse a gallery of the tattoo studio's previous artworks**, so that **I can assess their style and find inspiration for my own tattoo design**.
 
+# Wireframes
+
+<details>
+<summary>Desktop Wireframes</summary>
+
+<details>
+<summary>Home Page</summary>
+
+* ![Home Page](./static/images/readme/wireframe/home-desktop-w.png)
+</details>
+<details>
+<summary>About Page</summary>
+
+* ![About Page](./static/images/readme/wireframe/about-desktop-w.png)
+</details>
+<details>
+<summary>Barbers Page</summary>
+
+* ![Barbers Page](./static/images/readme/wireframe/barbers-desktop-w.png)
+</details>
+<details>
+<summary>Tattoo Page</summary>
+
+* ![Tattoo Page](./static/images/readme/wireframe/tattoo-desktop-w.png)
+</details>
+<details>
+<summary>Register Page</summary>
+
+* ![Register Page](./static/images/readme/wireframe/register-desktop-w.png)
+</details>
+<details>
+<summary>Login Page</summary>
+
+* ![Login Page](./static/images/readme/wireframe/login-desktop-w.png)
+</details>
+
+</details>
+
+<details>
+<summary>Mobile Wireframes</summary>
+
+<details>
+<summary>Home Page</summary>
+
+* ![Home Page](./static/images/readme/wireframe/home-mobile-w.png)
+</details>
+<details>
+<summary>About Page</summary>
+
+* ![About Page](./static/images/readme/wireframe/about-mobile-w.png)
+</details>
+<details>
+<summary>Barbers Page</summary>
+
+* ![Barbers Page](./static/images/readme/wireframe/barbers-mobile-w.png)
+</details>
+<details>
+<summary>Tattoo Page</summary>
+
+* ![Tattoo Page](./static/images/readme/wireframe/tattoo-mobile-w.png)
+</details>
+
+</details>
+
+<details>
+<summary>Narbar Diagram</summary>
+
+* ![Home Page](./static/images/readme/wireframe/inked-clippers-navbar-chart.png)
+
+</details>
 
 
 # Features
@@ -603,6 +675,8 @@ I have made a seperate file for testing Inked Clippers all testing results can b
 * [Gunicorn](https://gunicorn.org/) - A Python HTTP server for running web applications.
 
 * [sqlparse](https://pypi.org/project/sqlparse/) - A Python library for parsing and formatting SQL queries.
+
+* [Figma](https://www.figma.com/) - Used for creating wireframes.
 
 # Deployment
 
