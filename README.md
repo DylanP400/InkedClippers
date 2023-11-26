@@ -279,7 +279,7 @@ This Kanban board provided a clear visual representation of my project's progres
       </details>
 
   * Testimonials
-    * Testimonials is a section where people that have signed up for Inked Clippers can leave a review and tell there experience with the store and staff. If you are logged in there is a button that allows you to add your own review to the site.
+    * Testimonials is a section where people that have signed up for Inked Clippers can leave a review and tell there experience with the store and staff. I have added pagination for when the testimonials get too long it will only display 3 testimonials at a time.
 
     * The testimonials are made up of a star rating system, staff member, review and username.
 
@@ -333,7 +333,7 @@ This Kanban board provided a clear visual representation of my project's progres
 
     </details>
 
-  * the second section is a continuation of the first section the introduction and it has an image of three barber chairs.
+  * The second section is a continuation of the first section the introduction and it has an image of three barber chairs.
 
     <details>
     <summary>Desktop view</summary>
