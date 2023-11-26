@@ -32,6 +32,10 @@ Inked Clippers is your one-stop destination for all things barbershop and tattoo
 
 * [Features](#features)
 
+  * [Existing Features](#existing-features)
+
+  * [Future Features](#future-features)
+
 * [Testing](#testing)
 
 * [Technologies Used](#technologies-used)
@@ -620,6 +624,24 @@ This Kanban board provided a clear visual representation of my project's progres
     </details>
 
 [Back to top](#inked-clippers-barbershop--tattoo-studio)
+
+## Future Features
+
+* I am going to change the table in the barbershop page to cards that show images of the haircuts/services.
+
+* The website needs a proper colour scheme I will change the colour scheme when I am upgrading it but for the MVP I like the default bootstrap styling.
+
+* I am going to remove the login and register pages and replace them with [Django AllAuth](https://docs.allauth.org/en/latest/) for better security and functionality.
+
+* I want the option for the user to be able to make an apointment. I think leaving a testimonial isnt enough for a user to create an account and making an apointment would give the website more attraction and regular visitors. In the barber page the services table has a discount section for members I would like when booking an apointment the discount is applied at checkout.
+
+* I need to add a gallery for the barbershop on the barbers page currently I have no images of the haircuts and it would look a lot better with a gallery of happy customers.
+
+* For the tattoo page its not as simple as listing prices because the services can vary when getting a tattoo so I made a FAQ's section at the bottom with general questions about getting tattoos I would like to add a gallery for the tattoo artists previous work along with the piercers previous work.
+
+* I would like to add the employees social media links to the **Meet the barbers** & **Tattoo & piercer** sections. Many barbers and tattoo artists use social media to showcase their work and attract clients. I believe it would be a small but valuable addition.
+
+* I'm thinking about adding a blog to the website. This blog would go beyond the FAQs section and give more detailed info on things like how to take care of tattoos and piercings. It could also cover tips for men's beards, suggesting products and offering step by step guides. The blog would be a friendly place to get more specific advice on looking after your body art and grooming.
 
 # Testing
 
