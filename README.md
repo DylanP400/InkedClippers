@@ -6,7 +6,8 @@ Welcome to Inked Clippers!
 
 Inked Clippers is your one-stop destination for all things barbershop and tattoo studio. Our platform brings together skilled barbers, talented tattoo artists, and expert piercers to showcase their services and connect with potential clients. Whether you're looking for a fresh haircut, a unique tattoo, or a stylish body piercing, Inked Clippers has got you covered.
 
-[View live version](https://inked-clippers-6a7245ad63c3.herokuapp.com/)
+[View live website](https://inked-clippers-6a7245ad63c3.herokuapp.com/)
+
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/DylanP400/InkedClippers)
 ![GitHub contributors](https://img.shields.io/github/contributors/DylanP400/InkedClippers)
@@ -23,6 +24,8 @@ Inked Clippers is your one-stop destination for all things barbershop and tattoo
 
   * [Initial Discussion](#initial-discussion)
 
+  * [Agile Methodology](#agile-methodology-moscow-and-kanban-board)
+
   * [User Stories](#user-stories)
 
 * [Features](#features)
@@ -38,12 +41,10 @@ Inked Clippers is your one-stop destination for all things barbershop and tattoo
   * [Local Deployment](#local-deployment)
 
 
-
-
-
 # User Experience
 
 ## Initial Discussion
+
 Inked Clippers Barbershop & Tattoo Studio is the culmination of my passion for both barbershop aesthetics and tattoo artistry. Originally conceived as a barbershop, I quickly realized that I could expand the concept to include a tattoo parlor, making the project even more exciting and unique.
 
 As a Django beginner, I embarked on this project with enthusiasm and determination. At first, I faced challenges connecting the various components, but through persistent trial and error, I gained a deeper understanding of the Django framework. Witnessing my vision gradually take shape was incredibly rewarding.
@@ -67,6 +68,40 @@ As a testament to my growth as a developer, Inked Clippers serves as my inaugura
 * **Barbers Page**: Explore a variety of barber services and meet the talented team of barbers.
 
 * **Tattoo Page**: Explore piercing services, and get answers to common questions about getting a tattoo and aftercare from skilled artists and piercers on the Tattoo Page and FAQs section.
+
+
+## Agile Methodology, MOSCOW, and Kanban Board
+
+### My Agile Approach
+
+This project was developed using **Agile methodologies** to facilitate flexibility and iterative progress. Embracing an adaptive planning process allowed me to continuously improve and respond to evolving project needs.
+
+### User Stories and MOSCOW Prioritization
+
+To outline project features, I defined user stories short descriptions from an end user's perspective. Employing the MOSCOW technique helped me prioritize these features effectively:
+
+* **Must-Have:** Identified critical features essential for project success.
+* **Should-Have:** Important features that were not immediately critical.
+* **Could-Have:** Considered features that could be included if time allowed.
+* **Wont-Have:** Acknowledged nice-to-haves that were intentionally excluded from the current scope.
+
+MOSCOW prioritization guided me in managing expectations, focusing on key deliverables, and navigating the development process.
+
+### Kanban Board for Task Management
+
+I utilized a Kanban board to visually manage the flow of work throughout the project. The board's columns included:
+
+* **To Do:** Tasks (user stories) planned for development.
+* **In Progress:** Tasks actively being worked on.
+* **Done** Tasks that have been finished.
+* **Future Features:** Tasks that will be added in the future.
+* **Wont Have** Tasks that wont be included in the project.
+
+This Kanban board provided a clear visual representation of my project's progress, making it easier to track and manage tasks.
+[Link to project Kanban board.](https://github.com/users/DylanP400/projects/7/views/1)
+
+
+[Back to top](#inked-clippers-barbershop--tattoo-studio)
 
 ## User Stories
 
@@ -104,11 +139,14 @@ As a testament to my growth as a developer, Inked Clippers serves as my inaugura
 
 * As a **customer**, I want to **browse a gallery of the tattoo studio's previous artworks**, so that **I can assess their style and find inspiration for my own tattoo design**.
 
+
+
 # Features
 
 ## Existing Features
 
 * Nav
+
   * The nav bar is at the top of every page and has the logo with links to the About page, Barbers page, Tattoo page, Register and Log in pages.
 
     * Once the user is logged in the link to the About page is hidden and the Register link changes to profile while Login changes to Log out.
@@ -509,6 +547,7 @@ As a testament to my growth as a developer, Inked Clippers serves as my inaugura
 
     </details>
 
+[Back to top](#inked-clippers-barbershop--tattoo-studio)
 
 # Testing
 
@@ -692,6 +731,8 @@ os.environ['CLOUDINARY_URL'] = 'Your_Cloudinary_url'
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
+[Back to top](#inked-clippers-barbershop--tattoo-studio)
 
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
