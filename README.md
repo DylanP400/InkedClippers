@@ -46,6 +46,8 @@ Inked Clippers is your one-stop destination for all things barbershop and tattoo
   * [Heroku](#heroku)
   * [Local Deployment](#local-deployment)
 
+* [Credits](#credits)
+
 
 # User Experience
 
@@ -828,7 +830,18 @@ os.environ['CLOUDINARY_URL'] = 'Your_Cloudinary_url'
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
 
-[Back to top](#inked-clippers-barbershop--tattoo-studio)
 
+# Credits
+
+## tutorials
+
+ * I watched [Corey Schafer's Django Tutorial](https://www.youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p) to get a better understanding of Django.
+
+## Imagery
+
+I got the home page image and the images of the "employees" from [Pexels](https://www.pexels.com/search/barber/)
+
+
+[Back to top](#inked-clippers-barbershop--tattoo-studio)
 
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
