@@ -28,7 +28,13 @@ Inked Clippers is your one-stop destination for all things barbershop and tattoo
 
   * [User Stories](#user-stories)
 
-* [Wireframes](#wireframes)
+* [Design](#design)
+
+  * [Colour Scheme](#colour-scheme)
+
+  * [typograpghy](#typograpghy)
+
+  * [Wireframes](#wireframes)
 
 * [Features](#features)
 
@@ -147,7 +153,39 @@ This Kanban board provided a clear visual representation of my project's progres
 
 * As a **customer**, I want to **browse a gallery of the tattoo studio's previous artworks**, so that **I can assess their style and find inspiration for my own tattoo design**.
 
-# Wireframes
+
+# Design
+
+## Colour Scheme
+
+* For the Minimum Viable Product (MVP), I have opted to stick with the default Bootstrap styling, providing a clean and familiar look. However, future upgrades will introduce a color scheme to enhance the overall aesthetic appeal of the site.
+
+| Element                           | Color           | Description |
+| ----------------------------------| --------------- | ------------|
+| Text (Default)                    | White           | |
+| General Background                | RGB(33, 33, 33) | Dark Gray      |
+| Navbar Background                 | RGB(31, 37, 41) | Dark Slate Gray|
+| Footer Background                 | RGB(31, 37, 41) | Dark Slate Gray|
+| Footer links                      | White | |
+| Barbershop Table Text             | White           |                |
+| Tattoo Accordion Background       | #212529         | | Blue Shark   |
+| Tattoo Accordion Text             | White           |                |
+| Tattoo Accordion Body Background  | #212529         | Blue Shark   |
+| Register Form Label Text          | White           | |
+| Register Form Text                | White           | |
+| Login White Container Border      | White           | |
+| Profile Container Border          | White           | |
+| Review Container Border           | White           | |
+| Back to Top Button Background     | RGB(33, 37, 31) | Blue |
+| Back to Top Button Hover Background| Blue           | |
+| Back to Top Button Text           | White           | |
+
+
+## Typograpghy
+
+* I have not incorporated specific fonts in my current project. However, I plan to introduce fonts in future updates to enhance the overall design and aesthetics
+
+## Wireframes
 
 <details>
 <summary>Desktop Wireframes</summary>
