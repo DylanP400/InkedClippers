@@ -12,6 +12,8 @@
 
 * [Wave](#wave)
 
+* [Bugs](#bugs)
+
 
 # Manual Testing
 
@@ -582,3 +584,13 @@ Lighthouse scores are all in the high 90s and green.
 
 * ![Logout page wave results](./static/images/readme/wave/logout-wave.png)
 </details>
+
+
+# Bugs
+
+* I have only noticed one bug in the users profile When updating the user profile image, the 'currently' field intended to display the image name is empty. I am using Cloudinary and the image names get hashed and that could be why it cannot access the image name I will fix this bug in future updates.
+
+  * ![Image of the bug](./static/images/readme/bug-1.png)
+
+
+[Back To Top](#contents)
